@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <!--#include virtual="/includes/header.html" -->
-    <h1>content</h1>
-    <!--#include virtual="/includes/footer.html" -->
+    <div id="header"></div>
+    <h1>Content</h1>
+    <div id="footer"></div>
+    
+    <script>
+        $(function() {
+            $('#header').load('/includes/header.html');
+            $('#footer').load('/includes/footer.html');
+        });
+    </script>
 </body>
 </html>
