@@ -1,0 +1,9 @@
+This folder contains generic scripts to help standardize projects and technologies. 
+
+folder contains:
+    1. file structure.ps1 => creates simple file structure (edited to create current structure)
+    2. system setup.sh => installs technologies and tools onto computer to standardize toolkits between computers (full stack dev defualt)
+
+orginal owner: Tyshawn Andrews
+to viewers: 
+    i don't care too much about reuse or reproduction of simple files like above, as long as they are not used to generate revenue or for profit.

@@ -1,4 +1,4 @@
-<?php
+ <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data
     $name = $_POST['name'];
@@ -19,4 +19,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo "There was a problem with your submission, please try again.";
 }
+// can't use this script on Vercel
 ?>
