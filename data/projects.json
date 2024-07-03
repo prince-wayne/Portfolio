@@ -2,14 +2,14 @@
     {
         "id" : 1,
         "title" : "test project 1",
-        "img" : "#a",
+        "image" : "#a",
         "link" : "https://www.nasa.gov/",
         "desription" : "words"
     },
     {
         "id" : 2,
         "title" : "test project 1",
-        "img" : "#a",
+        "image" : "#a",
         "link" : "https://www.si.edu/",
         "desription" : "words"
 
@@ -17,14 +17,14 @@
     {
         "id" : 3,
         "title" : "test project 1",
-        "img" : "#a",
+        "image" : "#a",
         "link" : "https://www.nationalgeographic.com/",
         "desription" : "words"
     },
     {
         "id" : 3,
         "title" : "test project 1",
-        "img" : "#a",
+        "image" : "#a",
         "link" :     "https://www.gutenberg.org/",
         "desription" : "words"
 
@@ -32,7 +32,7 @@
     {
         "id" : 3,
         "title" : "test project 1",
-        "img" : "#a",
+        "image" : "#a",
         "link" : "https://www.ted.com/",
         "desription" : "words"
     }
