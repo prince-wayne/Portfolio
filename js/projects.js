@@ -10,8 +10,12 @@ function displayProjectCards(limitEnabled, projectIDs) {
             fetch('includes/project-card.html')
                 .then(response => response.text())
                 .then(template => {
-                    container.innerHTML = ''; // Clear container before appending new cards
-
+                    if (!container) {
+                        console.error('Error: Project cards container not found.');
+                        return;
+                    }
+                    container.innerHTML = ' '; // Clear container before appending new cards
+                    
                     let filteredProjects = projects;
                     projects.reverse(); // reverse the array to show most recent first
 
