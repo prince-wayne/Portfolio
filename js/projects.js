@@ -10,7 +10,9 @@ function displayProjectCards(limitEnabled, projectIDs) {
             fetch('includes/project-card.html')
                 .then(response => response.text())
                 .then(template => {
-                    container.innerHTML = ''; // Clear container before appending new cards
+                    if (!container.innerHTML === null) {
+                        container.innerHTML = ''; // Clear container before appending new cards
+                    }
 
                     let filteredProjects = projects;
                     projects.reverse(); // reverse the array to show most recent first
