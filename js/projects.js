@@ -1,5 +1,5 @@
 function displayProjectCards(limitEnabled, projectIDs) {
-    const container = document.getElementById('project-cards-container');
+    const container = document.getElementsByClassName('project-cards-container')[0];
 
     fetch('data/projects.json')
         .then(response => response.json())
@@ -17,7 +17,6 @@ function displayProjectCards(limitEnabled, projectIDs) {
                     container.innerHTML = ' '; // Clear container before appending new cards
                     
                     let filteredProjects = projects;
-                    projects.reverse(); // reverse the array to show most recent first
 
                     // Filter projects by projectIDs if provided and they are valid
                     if (Array.isArray(projectIDs) && projectIDs.length > 0) {
@@ -27,6 +26,7 @@ function displayProjectCards(limitEnabled, projectIDs) {
                         filteredProjects = filteredProjects.slice(0, 3);
                     }
 
+                    let tempFix = "";
                     filteredProjects.forEach(project => {
                         const card = document.createElement('div');
                         card.innerHTML = template;
@@ -37,8 +37,12 @@ function displayProjectCards(limitEnabled, projectIDs) {
                         card.querySelector('.project-description').textContent = project.description;
                         card.querySelector('.project-link').href = project.link;
 
-                        container.appendChild(card);
+                        container.appendChild(card); // not working as it's suppose to so we're creating a temp solution
+                        // tempFix += `${card.innerHTML}`;
+                        
                     });
+                    // console.log(tempFix);
+                    // container.innerHTML = `${tempFix}`;
                 })
                 .catch(error => console.error('Error loading project card template:', error));
         })
