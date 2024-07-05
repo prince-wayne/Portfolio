@@ -72,7 +72,15 @@
     <!-- Fill the product cards by id until three -->
      <script src="js\projects.js"></script>
      <script>
-        displayProjectCards(true, 7); // purposeful error in call should give 5,4,3
+        document.addEventListener('DOMContentLoaded', function() {
+            /* Production */    
+            // displayProjectCards(true, [5,1,2]); // should give 5,4,3
+            /* Test 1 */
+            // displayProjectCards(false); //tests <- passed
+            /* Test 2 */
+            displayProjectCards(false, [1, 2, 3]); //tests <- failed 
+            /* the false should cancel the array choice */
+        });
      </script>
 </body>
 </html>
