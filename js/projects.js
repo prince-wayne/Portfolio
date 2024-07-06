@@ -18,15 +18,19 @@ function displayProjectCards(limitEnabled, projectIDs) {
                     
                     let filteredProjects = projects;
 
-                    // Filter projects by projectIDs if provided and they are valid
-                    if (Array.isArray(projectIDs) && projectIDs.length > 0) {
-                        filteredProjects = filteredProjects.filter(project => projectIDs.includes(project.id));
-                    } else if (limitEnabled){
-                        // Default to showing the most recent 3 projects if projectIDs is not an array
-                        filteredProjects = filteredProjects.slice(0, 3);
+                    // if the limit is relased then it will list all projects
+                    if (limitEnabled) {
+                        // Filter projects by projectIDs if provided and they are valid
+                        if (Array.isArray(projectIDs) && projectIDs.length > 0 && projectIDs.length <= 3) {
+                            filteredProjects = filteredProjects.filter(project => projectIDs.includes(project.id));
+                        } else {
+                            // Default to showing the most recent 3 projects if projectIDs is not an array
+                            filteredProjects = filteredProjects.slice(0, 3);
+                            const header = document.querySelector('#project-showcase-header');
+                            header.innerHTML = "Recent projects";
+                        } 
                     }
 
-                    let tempFix = "";
                     filteredProjects.forEach(project => {
                         const card = document.createElement('div');
                         card.innerHTML = template;
@@ -37,14 +41,13 @@ function displayProjectCards(limitEnabled, projectIDs) {
                         card.querySelector('.project-description').textContent = project.description;
                         card.querySelector('.project-link').href = project.link;
 
-                        container.appendChild(card); // not working as it's suppose to so we're creating a temp solution
-                        // tempFix += `${card.innerHTML}`;
+                        container.appendChild(card);
                         
                     });
-                    // console.log(tempFix);
-                    // container.innerHTML = `${tempFix}`;
                 })
                 .catch(error => console.error('Error loading project card template:', error));
         })
         .catch(error => console.error('Error loading projects:', error));
 }
+// displayProjectCards(false, [1, 4, 2]); //tests <- failed current task <- fix this behavior 
+// new bug found, if the function array exceds a length of 3 it will display all of those

@@ -8,7 +8,9 @@
 </head>
 <body>
     <!-- Header include -->
-    <div id="header"></div>
+    <div id="header">
+        <!-- 433,872 6th -->
+    </div>
 
     <!-- Introduction Section -->
     <section id="introduction">
@@ -19,7 +21,7 @@
 
     <!-- Portfolio Showcase Section -->
     <section id="portfolio-showcase">
-        <h3>Featured Projects</h3>
+        <h3 id = 'project-showcase-header'>Featured Projects</h3>
         <div class="project-cards-container">
             <!-- project 1  -->
             <!-- project 2  -->
@@ -72,16 +74,9 @@
     <!-- Fill the product cards by id until three -->
      <script src="js\projects.js"></script>
      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            /* Production */    
-            // displayProjectCards(true, [5,1,2]); // should give 5,4,3
-            /* Test 1 */
-            // displayProjectCards(false); //tests <- passed
-            /* Test 2 */
-            displayProjectCards(false, [1, 2, 3]); //tests <- failed 
-            /* the false should cancel the array choice */
-
-        });
+         displayProjectCards(true); // should correct the inputed array to show the three most recent
      </script>
+
+     <script src="js/contact.js"></script>
 </body>
 </html>

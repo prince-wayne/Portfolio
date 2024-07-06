@@ -1,0 +1,14 @@
+tips to save time in the future
+    creates a div with class
+        .classname
+    creates a tag with class name
+        tag.classname
+    creates above with contents inside brackets
+        {}
+    creates a h3 element under the class name containing Ty`shawn as it's contents
+        h3.name{Ty`shawn}
+    Stores value to keep element center
+        --width: 500px;
+        --space: calc(100% - var(--width));
+        --placement: calc(var(--space)/2);
+         

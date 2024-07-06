@@ -1,0 +1,124 @@
+body {
+    /* Colors */
+    /* Primary */
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsla(32, 80%, 66%, 0.658);
+    /* neutral */
+    --dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    background-color: var(--cream);
+    /* Spacing tool */
+    --width: 350px;
+    --space: calc(100% - var(--width));
+    --placement: calc(var(--space)/2);
+
+    font-size: 14px;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.card {
+    position: relative;
+    left: var(--placement);
+    width: var(--width);
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 10px;
+
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+h1,
+h2,
+h4,
+p,
+button {
+    --width-card-elements: 85%;
+    --space-card-elements: calc(100% - var(--width-card-elements));
+    --placement-card-elements: calc(var(--space-card-elements)/2);
+    margin: 10px var(--placement-card-elements);
+    width: var(--width-card-elements);
+
+}
+
+#card-subheading,
+#card-body,
+#list-price {
+    opacity: 40%;
+}
+
+#card-header {
+    font-size: 1.8rem;
+    line-height: 0.95em;
+}
+
+#card-subheading {
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+p {
+    line-height: 1.4em;
+    margin-bottom: 20px;
+}
+
+#retail-price {
+    color: var(--dark-cyan);
+    font-size: 1.3em;
+    vertical-align: middle;
+
+}
+
+#list-price {
+    margin-left: 10px;
+    text-decoration: line-through;
+    font-size: 0.7em;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#cart-img {
+    width: 15px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+button {
+    margin-bottom: 20px;
+    padding: 15px;
+
+    background-color: var(--dark-cyan);
+    border: none;
+    border-radius: 10px; 
+    color: white;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+button:hover {
+    box-shadow: 5px 5px 5px 5px var(--dark-blue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 400px) {}

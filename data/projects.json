@@ -1,46 +1,68 @@
 [
     {
-        "id" : 1,
-        "title" : "test project 1",
-        "image" : "#a",
-        "link" : "https://www.nasa.gov/",
-        "desription" : "words"
+        "id": 1,
+        "title": "Generator Page",
+        "images": {
+            "desktop": "images/generator-page.png",
+            "phone": "",
+            "tablet": ""
+        },
+        "link": "Projects/generator-page/index.html",
+        "description": "A dynamic generator with custom inputs meant for beginning developers leaning the DOM api. It's a low level project meant to develop Javascript skills, while the site itself is mean for comedic reasons."
     },
     {
-        "id" : 2,
-build-1.1
-        "title" : "test project 2",
-
-        "image" : "#a",
-        "link" : "https://www.si.edu/",
-        "desription" : "words"
-
+        "id": 2,
+        "title": "Single Price Grid Component",
+        "images": {
+            "desktop": "images/single-price-grid-component.png",
+            "phone": "",
+            "tablet": ""
+        },
+        "link": "Projects/single-price-grid-component-master/index.html",
+        "description": "A responsive single price grid component. This Project had two phases and i moved on after the first meaning this is a desktop only version."
     },
     {
-        "id" : 3,
-
-        "title" : "test project 3",
-
-        "image" : "#a",
-        "link" : "https://www.nationalgeographic.com/",
-        "desription" : "words"
+        "id": 3,
+        "title": "QR Code Component",
+        "images": {
+            "desktop": "images/qr-code-component.png",
+            "phone": "",
+            "tablet": ""
+        },
+        "link": "Projects/qr-code-component-main/index.html",
+        "description": "A simple QR code component. Built simply to warm up for a larger project or class a morning"
     },
     {
-
-        "id" : 4,
-        "title" : "test project 4",
-        "image" : "#a",
-        "link" :  "https://www.gutenberg.org/",
-
-        "desription" : "words"
-
+        "id": 4,
+        "title": "Blog Preview Card",
+        "images": {
+            "desktop": "images/blog-preview-card.png",
+            "phone": "",
+            "tablet": ""
+        },
+        "link": "Projects/blog-preview-card-main/index.html",
+        "description": "A preview card for blog posts. another warm up project"
     },
     {
-        "id" : 5,
-        "title" : "test project 5",
-
-        "image" : "#a",
-        "link" : "https://www.ted.com/",
-        "desription" : "words"
+        "id": 5,
+        "title": "Testimonials Grid Section",
+        "images": {
+            "desktop": "images/testimonials-grid-section.png",
+            "phone": "",
+            "tablet": ""
+        },
+        "link": "Projects/testimonials-grid-section-main/index.html",
+        "description": "A grid layout for testimonials. this was meant to teach me flexbox and grid, however i used flexbox and learned grid later."
+    },
+    {
+        "id": 6,
+        "title": "Product Preview Card",
+        "images": {
+            "desktop": "images/product-preview-card.png",
+            "phone": "",
+            "tablet": ""
+        },
+        "link": "Projects/product-preview-card-component-main/index.html",
+        "description": "A preview card for products. another warm up project before class."
     }
 ]
