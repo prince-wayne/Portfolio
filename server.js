@@ -1,5 +1,3 @@
-//ensure node.js is installed before running script
-
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
@@ -18,15 +16,15 @@ app.post('/send-email', (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'your-email@gmail.com',
-            pass: 'your-email-password'
+            user: process.env.Email_Owner,
+            pass: process.env.Email_Password_Owner
         }
     });
 
     const mailOptions = {
-        from: 'your-email@gmail.com',
-        to: 'your-email@gmail.com',
-        subject: 'Portfolio Contact Form',
+        from: process.env.Email_Owner,
+        to: process.env.Email_Password_Owner,
+        subject: `Portfolio contact from ${email}`,
         text: `Name: ${name}\nEmail: ${email}\nProject Details: ${projectDetails}\nStart Date: ${startDate}\nEnd Date: ${endDate}`
     };
 
