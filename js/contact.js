@@ -4,8 +4,8 @@ document.getElementById('contract-form').addEventListener('submit', function(eve
     const formData = new FormData(this);
     const jsonData = {};
     formData.forEach((value, key) => jsonData[key] = value);
-    const endpoint = process.env.Email_Endpoint;
-    fetch(endpoint, {
+    
+    fetch(process.env.Email_Endpoint, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
