@@ -5,7 +5,7 @@ document.getElementById('contract-form').addEventListener('submit', function(eve
     const jsonData = {};
     formData.forEach((value, key) => jsonData[key] = value);
 
-    fetch('/send-email', {
+    fetch('https://formspree.io/f/xeojqdzr', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
