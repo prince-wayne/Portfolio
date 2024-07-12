@@ -8,7 +8,10 @@
             "tablet": ""
         },
         "link": "Projects/generator-page/index.html",
-        "description": "A dynamic generator with custom inputs meant for beginning developers leaning the DOM api. It's a low level project meant to develop Javascript skills, while the site itself is mean for comedic reasons."
+        "description": {
+            "short": "A dynamic generator with custom inputs, designed for beginners learning the DOM API.",
+            "long": "The Generator Page is a hands-on project aimed at novice developers looking to enhance their JavaScript skills through practical application of DOM manipulation. Featuring custom inputs, this project combines functionality with a touch of humor, making it an engaging learning experience."
+        }
     },
     {
         "id": 2,
@@ -19,7 +22,10 @@
             "tablet": ""
         },
         "link": "Projects/single-price-grid-component-master/index.html",
-        "description": "A responsive single price grid component. This Project had two phases and i moved on after the first meaning this is a desktop only version."
+        "description": {
+            "short": "A responsive single price grid component for desktop.",
+            "long": "The Single Price Grid Component project showcases my proficiency in creating responsive designs for desktop environments. With a focus on clarity and visual appeal, this component provides a straightforward pricing display suitable for various applications."
+        }
     },
     {
         "id": 3,
@@ -30,7 +36,10 @@
             "tablet": ""
         },
         "link": "Projects/qr-code-component-main/index.html",
-        "description": "A simple QR code component. Built simply to warm up for a larger project or class a morning"
+        "description": {
+            "short": "A simple QR code component.",
+            "long": "The QR Code Component project serves as a quick warm-up exercise, emphasizing simplicity and functionality. Designed to generate QR codes effortlessly, it lays the groundwork for more complex coding challenges and project undertakings."
+        }
     },
     {
         "id": 4,
@@ -41,7 +50,10 @@
             "tablet": ""
         },
         "link": "Projects/blog-preview-card-main/index.html",
-        "description": "A preview card for blog posts. another warm up project"
+        "description": {
+            "short": "A preview card for blog posts.",
+            "long": "The Blog Preview Card project demonstrates my ability to create visually appealing blog post previews. With a clean layout and concise information presentation, this project enhances user engagement by offering a glimpse into featured content before exploration."
+        }
     },
     {
         "id": 5,
@@ -52,7 +64,10 @@
             "tablet": ""
         },
         "link": "Projects/testimonials-grid-section-main/index.html",
-        "description": "A grid layout for testimonials. this was meant to teach me flexbox and grid, however i used flexbox and learned grid later."
+        "description": {
+            "short": "A grid layout for testimonials.",
+            "long": "The Testimonials Grid Section project exemplifies my mastery of CSS Flexbox and Grid technologies. Designed to showcase customer feedback effectively, it utilizes flexible layouts to accommodate diverse content lengths while maintaining a cohesive visual structure."
+        }
     },
     {
         "id": 6,
@@ -63,6 +78,9 @@
             "tablet": ""
         },
         "link": "Projects/product-preview-card-component-main/index.html",
-        "description": "A preview card for products. another warm up project before class."
+        "description": {
+            "short": "A preview card for products.",
+            "long": "The Product Preview Card project serves as an introductory exercise in creating interactive product displays. Featuring a compact design and intuitive navigation, it prepares me for more advanced frontend development challenges through practical application and exploration."
+        }
     }
 ]

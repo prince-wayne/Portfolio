@@ -1,4 +1,4 @@
-document.getElementById('contract-form').addEventListener('submit', function(event) {
+document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const formData = new FormData(this);
@@ -20,3 +20,5 @@ document.getElementById('contract-form').addEventListener('submit', function(eve
         console.error('Error:', error);
     });
 });
+
+$('#contact-form').load('/includes/contact.html');

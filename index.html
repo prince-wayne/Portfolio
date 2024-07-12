@@ -22,17 +22,13 @@
     <!-- Portfolio Showcase Section -->
     <section id="portfolio-showcase">
         <h3 id = 'project-showcase-header'>Featured Projects</h3>
-        <div class="project-cards-container">
-            <!-- project 1  -->
-            <!-- project 2  -->
-            <!-- project 3 loaded through js -->
-        </div>
-        <!-- Add more projects as needed -->
+        <!-- Projects Section -->
+        <div id="project-cards-container"></div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
+        <h2>About Me ,<span> testing text</span></h2>
 
         <p>With a hands-on approach, I have developed skills in both web development and automotive maintenance. I am pursuing an Associate of Applied Science at Johnson County Community College, with coursework in web development and automotive repair. I am dedicated to continuous learning and applying my knowledge to real-world scenarios.</p>
 
@@ -53,20 +49,20 @@
 
     <!-- Include jQuery library -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <!-- Include header and footer -->
-    <script>
-        $(function() {
-            $('#header').load('/includes/header.html');
-            $('#footer').load('/includes/footer.html');
-            $('#contact-form').load('/includes/contact.html');
-        });
-    </script>
-    <!-- Fill the product cards by id until three -->
-     <script src="js\projects.js"></script>
-     <script>
-         displayProjectCards(true); // should correct the inputed array to show the three most recent
-     </script>
+    <script src="/js/template loader.js"></script>
 
-     <script src="js/contact.js"></script>
+    <!-- Fill the product cards by id until three -->
+    <script type="module" src="/js/projects.js"></script>
+    <script src="/js/contact.js"></script>
+
+    <script type="module">
+        import {displayProjectCards} from '/js/projects.js'; 
+        import {loadContatactForm} from '/js/contact.js'
+        displayProjectCards(true); // should correct the inputed array to show the three most recent
+    </script>
+
+
 </body>
 </html>

@@ -1,0 +1,34 @@
+[
+    {
+        "id" : "Home",
+        "title": "Welcome to My Portfolio",
+        "description": "Discover my projects, skills, and experiences.",
+        "buttonText": "Learn More",
+        "buttonLink": "#aboutSection",
+        "backgroundImage": "path/to/home-hero-image.jpg"
+    },
+    {
+        "id" : "Projects",
+        "title": "My Projects",
+        "description": "Explore the various projects I've worked on and see what I can do.",
+        "buttonText": "Explore Projects",
+        "buttonLink": "#projectsSection",
+        "backgroundImage": "path/to/projects-hero-image.jpg"
+    },
+    {
+        "id" : "About",
+        "title": "About Me",
+        "description": "Learn more about my journey and experiences.",
+        "buttonText": "Learn More",
+        "buttonLink": "#aboutSection",
+        "backgroundImage": "path/to/about-hero-image.jpg"
+    },
+    {
+        "id" : "Contact",
+        "title": "Contact Me",
+        "description": "Get in touch and let's create something amazing together.",
+        "buttonText": "Get in Touch",
+        "buttonLink": "#contactSection",
+        "backgroundImage": "path/to/contact-hero-image.jpg"
+    }
+]
