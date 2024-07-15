@@ -5,9 +5,6 @@ const HeroData = loadDataFile('/data/hero sections.json');
 function displayHeroSection(heroID) {
     const container = document.getElementById('hero-section-container');
     if (!container) {
-        console.error('Error: no container element found');
-    }
-    if (!container) {
         console.error('Error: Hero section container not found.');
         return;
     }
@@ -18,14 +15,15 @@ function displayHeroSection(heroID) {
             container.innerHTML = ''; // Clear container before appending new hero section
 
             HeroData.then(heroSections => {
-                try {
-                    console.log(heroSections);
-                } catch (error) {
-                    console.log(error);
-                }
+                /* 
+                    try {
+                        console.log(heroSections);
+                    } catch (error) {
+                        console.log(error);
+                    } 
+                */
                 const heroSection = heroSections.find(section => section.id === heroID); // error here, .find is not a function
                 
-
                 if (!heroSection) {
                     console.error('Error: Hero section not found.');
                     return;
@@ -50,7 +48,7 @@ function displayHeroSection(heroID) {
                 /* call to action */
                 heroElement.querySelector('.hero-cta').textContent = heroSection.buttonText;
                 heroElement.querySelector('.hero-cta').href = heroSection.buttonLink;
-
+                heroElement.querySelector('.hero-cta').target = heroSection.target;
 
                 container.appendChild(heroElement);
 

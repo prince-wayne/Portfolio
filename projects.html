@@ -7,12 +7,6 @@
 </head>
 
 <body>
-    <!--    construction message
-        <div  class="construction-message-box">
-            <h2 class = "construction-message">Under Contruction</h2>
-        </div> 
-    -->
-    
     <!-- header (navagation bar) -->
     <div id="header"></div>
     <!-- hero section -->
@@ -20,25 +14,21 @@
     <!-- projects -->
     <div id="project-cards-container"></div>
     <!-- Contact Section -->
-    <div id="contact-form"></div>
+     <section id="contact-box">
+         <div id="contact-form"></div>
+         <p> I'd love to work on a project with you and your team</p>
+    </section>
     <!-- footer -->
     <div id="footer"></div>
+
 
     <!-- jQuery Libaray -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- header and footer -->
     <script src="./js/template loader.js" ></script>
-    <!-- hero template includsion -->
-    <script  type="module" src="/js/hero.js"></script>
-    <script>
-        
-    </script>
-    <!-- projects function -->
-    <script  type="module" src="/js/projects.js">
-        // displayProjectCards(false); // loads all projects  
-    </script>
     <!-- contact form  -->
     <script src="../js/contact.js"></script> 
+    
     <!-- script functions  -->
     <script type = 'module'>
         import {displayProjectCards} from './js/projects.js';

@@ -20,5 +20,6 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         console.error('Error:', error);
     });
 });
-
 $('#contact-form').load('/includes/contact.html');
+
+// a way to make this better would be to add a id/class validation to ensure the selector exist

@@ -5,23 +5,26 @@
         "description": "Discover my projects, skills, and experiences.",
         "buttonText": "Learn More",
         "buttonLink": "#aboutSection",
-        "backgroundImage": "path/to/home-hero-image.jpg"
+        "backgroundImage": "path/to/home-hero-image.jpg",
+        "target": "_self"
     },
     {
         "id" : "Projects",
         "title": "My Projects",
-        "description": "Explore the various projects I've worked on and see what I can do.",
-        "buttonText": "Explore Projects",
-        "buttonLink": "#projectsSection",
-        "backgroundImage": "path/to/projects-hero-image.jpg"
+        "description": "Interested in how i made these? Go see at GitHub.com",
+        "buttonText": " My GitHub Profile",
+        "buttonLink": "https://github.com/prince-wayne",
+        "backgroundImage": "path/to/projects-hero-image.jpg",
+        "target": "_blank"
     },
     {
         "id" : "About",
-        "title": "About Me",
+        "title": "My Infomation",
         "description": "Learn more about my journey and experiences.",
         "buttonText": "Learn More",
         "buttonLink": "#aboutSection",
-        "backgroundImage": "path/to/about-hero-image.jpg"
+        "backgroundImage": "path/to/about-hero-image.jpg",
+        "target": "_self"
     },
     {
         "id" : "Contact",
@@ -29,6 +32,7 @@
         "description": "Get in touch and let's create something amazing together.",
         "buttonText": "Get in Touch",
         "buttonLink": "#contactSection",
-        "backgroundImage": "path/to/contact-hero-image.jpg"
+        "backgroundImage": "path/to/contact-hero-image.jpg",
+        "target": "_self"
     }
 ]

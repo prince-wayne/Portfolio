@@ -58,9 +58,15 @@
     <script src="/js/contact.js"></script>
 
     <script type="module">
+        // imports main function from projects.js
         import {displayProjectCards} from '/js/projects.js'; 
-        import {loadContatactForm} from '/js/contact.js'
-        displayProjectCards(true); // should correct the inputed array to show the three most recent
+        /*  
+            wasn't a need to make into a module, we converted the contact.js to load the section within the script.
+            // import {loadContatactForm} from '/js/contact.js'  
+        */ 
+       
+        // should correct the inputed array to show the three most recent
+        displayProjectCards(true); 
     </script>
 
 
