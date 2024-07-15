@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tyshawn Andrews</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <!-- Header include -->
-    <div id="header">
-        <!-- 433,872 6th -->
-    </div>
+    <!-- include Header -->
+    <div id="header"></div>
 
     <!-- Introduction Section -->
     <section id="introduction">
@@ -28,7 +26,7 @@
 
     <!-- About Section -->
     <section id="about">
-        <h2>About Me ,<span> testing text</span></h2>
+        <h2>About Me</h2>
 
         <p>With a hands-on approach, I have developed skills in both web development and automotive maintenance. I am pursuing an Associate of Applied Science at Johnson County Community College, with coursework in web development and automotive repair. I am dedicated to continuous learning and applying my knowledge to real-world scenarios.</p>
 
@@ -55,20 +53,14 @@
 
     <!-- Fill the product cards by id until three -->
     <script type="module" src="/js/projects.js"></script>
-    <script src="/js/contact.js"></script>
+    <script type = 'module' src="/js/contact.js"></script>
 
     <script type="module">
-        // imports main function from projects.js
-        import {displayProjectCards} from '/js/projects.js'; 
-        /*  
-            wasn't a need to make into a module, we converted the contact.js to load the section within the script.
-            // import {loadContatactForm} from '/js/contact.js'  
-        */ 
-       
-        // should correct the inputed array to show the three most recent
-        displayProjectCards(true); 
+        import {displayProjectCards} from '/js/projects.js'; // imports main function from projects.js
+        import {displayContact} from '/js/contact.js' // imports contact load function
+
+        displayProjectCards(true, [1, 5, 6]); // displays projects by ids [1, 5, 6]
+        displayContact(true); // true simply means the contact keeps the generic h2 element, also loads the form
     </script>
-
-
 </body>
 </html>

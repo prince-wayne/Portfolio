@@ -3,39 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projects - Tyshawn Andrews</title>
 </head>
 
 <body>
     <!-- header (navagation bar) -->
     <div id="header"></div>
+
     <!-- hero section -->
     <div id="hero-section-container"></div>
+
     <!-- projects -->
     <div id="project-cards-container"></div>
+
     <!-- Contact Section -->
      <section id="contact-box">
+         <p> I'd love to work on a project with you and your team. if you'd like to work together feel free to contact me through the contact form below</p>
          <div id="contact-form"></div>
-         <p> I'd love to work on a project with you and your team</p>
     </section>
+
     <!-- footer -->
     <div id="footer"></div>
 
-
     <!-- jQuery Libaray -->
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- header and footer -->
     <script src="./js/template loader.js" ></script>
-    <!-- contact form  -->
-    <script src="../js/contact.js"></script> 
-    
-    <!-- script functions  -->
-    <script type = 'module'>
-        import {displayProjectCards} from './js/projects.js';
-        import {displayHeroSection} from './js/hero.js';
-        displayProjectCards(false); // loads all projects  
-        displayHeroSection('Projects');
 
+    <!-- contact form  -->
+    <script type = 'module' src="../js/contact.js"></script> 
+    
+    <!-- script Main for Site  -->
+    <script type = 'module'>
+        import {displayProjectCards} from '/js/projects.js';
+        import {displayHeroSection} from '/js/hero.js';
+        import {displayContact} from '/js/contact.js';
+
+        displayProjectCards(false); // loads all projects  
+        displayHeroSection('Projects'); // drymaticaly loads hero section with hero.json data
+        displayContact(true); // display contact (this code file also contains the contact submit function)
     </script>
 
 </body>

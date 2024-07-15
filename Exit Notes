@@ -18,20 +18,28 @@
     - [x] About Page
     - [~] Resume
         - [x] Resume file 
-- [ ] Review pages html, structure, and content
-    - [ ] Home
-    - [ ] Projects 
-    - [ ] About
-    - [ ] Contact
-    - [ ] Resume
 
+- [x] Review pages html, structure, and content
+    - [x] Home
+    - [x] Projects 
+    - [x] About
+    - [x] Contact
+    - [x] Resume
+    - [ ] Send to typo check and consisently check
 
-## Next Tasks
 - [ ] Style pages 
     - [ ] Find images to use. We haven't used any yet.
     - [ ] build style plan <!-- having our wife put her input on this could be fun -->
     - [ ] make global style sheet
     - [ ] make page specific style sheets
+
+## Current issues
+- [x] Contact Form html file has an header and i'm ot able to select the header id to just change it within indivual pages where i would need to.
+    - works in console lets try to use an event listener to wait until the dom is loaded fully.
+
+
+
+## Next Tasks
 - [ ] Refactor JS for Performance
     - [ ] Use Currying so the hero.js and the project.js can use less resources 
         note: they both fundamentally do the same task: load data, load includes file, select container, fill container using data file.

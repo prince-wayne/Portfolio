@@ -25,8 +25,12 @@
 
     <!-- scripts for includes folder -->
      <script src="/js/template loader.js"></script>
-     <script src="/js/contact.js"></script>
+     <script type = 'module'src="/js/contact.js"></script>
 
+     <script type="module" >
+        import {displayContact} from '/js/contact.js'
+        displayContact(true);
+     </script>
 
 </body>
 </html>

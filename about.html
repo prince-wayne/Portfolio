@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About - Tyshawn Andrews</title>
 </head>
 
 <body>
@@ -58,6 +58,7 @@
         <p>Ready to start a project together? Fill out the form below, and let's turn your vision into reality.</p>
         <div id="contact-form"></div>
     </section>
+
     <div id="footer"></div>
 
     <!-- Library scripts  -->
@@ -65,14 +66,19 @@
 
     <!-- scripts for includes folder -->
      <script src="/js/template loader.js"></script>
-     <script src="/js/contact.js"></script>
+     <!-- <script src="/js/contact.js"></script> -->
 
     <!-- scripts -->
     <script type="module" src="/js/projects.js"></script>
+    <script type="module" src="/js/contact.js"></script>
+
     <script type="module">
         // to load projects
         import {displayProjectCards} from '/js/projects.js';
         import {displayHeroSection} from '/js/hero.js'
+        import {displayContact} from '/js/contact.js'
+        displayContact(false);
+
         displayProjectCards(true, [2, 5, 1]); // select the ones we want to feature later
         displayHeroSection('About');
     </script>
