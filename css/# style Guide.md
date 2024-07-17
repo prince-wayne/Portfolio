@@ -3,7 +3,7 @@
 ## Style Sheets 
 
 - main 
-    styles shared across all pages 
+    styles shared across all pages  (header, footer, colors used)
 - Home 
     styles for the home page 
 - about 
@@ -13,5 +13,5 @@
 ## Color Schemes 
 
 ### Dark
-
-### Light 
+    
+### Light  

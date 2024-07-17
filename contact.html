@@ -14,7 +14,7 @@
     <section id = 'header'></section>
     <section class="hero"></section>
 
-    <section class="preface">
+    <section class="contact-preface">
         <div class="contact-message-box">
             <h2 class="contact-hook-header" id="header-1">
                 Get in Touch
@@ -26,24 +26,29 @@
                 Ready to discuss how I can add value to your team? Fill out the form below, and I'll promptly get back to you. Let's make impactful web solutions a reality!
             </p>
         </div>
-
         <img src="#" alt="A relevant image" id="contact-hook-img">
-    </section><!-- this is meant to throw into the contact form, like a little nudge ecouraging contact through email -->
+    </section>
+    <!-- this is meant to throw into the contact form, like a little nudge ecouraging contact through email -->
 
-    <section id = 'contact-form'></section>
+    <div id="contact-container"></div>
 
     <section id="footer"> </section>
     <!-- scripts -->
 
+    <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <!-- Header and Footer -->
     <script src="/js/template loader.js"></script>
+
+    <!-- Contact Form -->
     <script type="module" src="/js/contact.js"></script>
+    <script src="/js/submit.js"></script>
 
     <script type = 'module'>
         import {displayContact} from '/js/contact.js';
         
-        displayContact(false)
+        displayContact(false);
     </script>
 
 </body>

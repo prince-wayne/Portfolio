@@ -56,7 +56,7 @@
     <section class="contact">
         <h2>Get in Touch</h2>
         <p>Ready to start a project together? Fill out the form below, and let's turn your vision into reality.</p>
-        <div id="contact-form"></div>
+        <div id="contact-container"></div>
     </section>
 
     <div id="footer"></div>
@@ -77,10 +77,10 @@
         import {displayProjectCards} from '/js/projects.js';
         import {displayHeroSection} from '/js/hero.js'
         import {displayContact} from '/js/contact.js'
-        displayContact(false);
-
+        
         displayProjectCards(true, [2, 5, 1]); // select the ones we want to feature later
         displayHeroSection('About');
+        displayContact(false);
     </script>
 </body>
 
