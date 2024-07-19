@@ -5,10 +5,10 @@
 ---
 
 ## gobal tasks:
-- [ ] build functionality across all pages (js)
+- [~] build functionality across all pages (js) <!-- we will need to refractor later on -->
 
 ## Current task:
-- [ ] build pages 
+- [x] build pages 
     - [x] Home
     - [x] Projects 
         - [x] hero section 
@@ -29,7 +29,8 @@
 
 - [ ] Style pages 
     - [ ] Find images to use. We haven't used any yet.
-    - [ ] build style plan <!-- having our wife put her input on this could be fun -->
+    - [~] build style plan  <!-- <= current task as of 10 PM 7/17 --> 
+        - located at ('/css/# style Guide.md')[styles link] <!-- make sure you did this link right before commit -->
     - [ ] make global style sheet
     - [ ] make page specific style sheets
 

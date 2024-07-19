@@ -1,1 +1,81 @@
-/* This sheet will be for main styles and varibles if capiable */
+:root {
+    --background-color: #121212;
+    /* Dark Charcoal */
+    --primary-text: #E0E0E0;
+    /* Light Gray */
+    --secondary-text: #A0A0A0;
+    /* Gray */
+    --accent-color-1: #BB86FC;
+    /*  Neon Purple */
+    --accent-color-2: #03DAC6;
+    /* Neal Teal */
+    --highlight-color: #3700B3;
+    /*  Deep Purple */
+    --btn-Background: #1F1B24;
+    /* Dark Gray */
+    --btn-text: #E0E0E0;
+    /* Light Gray */
+    --link-color: #03A9F3;
+    /* Sky Blue */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--background-color);
+    color: var(--primary-text);
+}
+
+/* Header */
+
+/* The Mobile verison will likely have a dropdown  */
+
+#header { /* this the id of the container for the header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--accent-color-1);
+}
+
+header { /* this the tag name */
+    display: flex;
+
+    padding: 20px;
+
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header h1 {
+    color: var(--accent-color-1);
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-self: center;
+
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+nav a {
+    color: var(--primary-text);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.5s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: var(--highlight-color);
+    background-color: var(--btn-Background);
+}
+
+/* Footer */
