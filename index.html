@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tyshawn Andrews</title>
-    
+
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/home.css" />
 
     <!-- includes the library -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- include Header -->
     <div id="header"></div>
 
     <!-- Introduction Section -->
     <section id="introduction">
-        <h1 id = 'h1'>Tyshawn Andrews</h1>
-        <h3>Frontend Web Developer | Student</h3>
-        <p>I'm Tyshawn Andrews, a passionate and aspiring Frontend Web Developer with a background in automotive maintenance and a strong foundation in HTML, CSS, and JavaScript. My journey into web development has been driven by a desire to create responsive and engaging user experiences. With hands-on experience in developing small to medium-sized web projects, I am constantly learning and evolving my skills through online courses and practical projects.</p>
+      <h1>Tyshawn Andrews</h1>
+      <h4>Frontend Web Developer | Student</h4>
+      <p>
+        <span>I'm Tyshawn Andrews, </span> a passionate and aspiring Frontend
+        Web Developer with a background in automotive maintenance and a strong
+        foundation in HTML, CSS, and JavaScript. My journey into web development
+        has been driven by a desire to create responsive and engaging user
+        experiences. With hands-on experience in developing small to
+        medium-sized web projects, I am constantly learning and evolving my
+        skills through online courses and practical projects.
+      </p>
     </section>
 
     <!-- Portfolio Showcase Section -->
-    <section id="portfolio-showcase">
-        <h3 id = 'project-showcase-header'>Featured Projects</h3>
-        <!-- Projects Section -->
-        <div id="project-cards-container"></div>
+    <section class="projects" id="portfolio-showcase">
+      <h2 id="project-showcase-header">Featured Projects</h2>
+      <!-- Projects Section -->
+      <div id="project-cards-container">
+        <!-- article * 3 (these each contain a card, we can select these multiple ways though we need to be consistent in how we do this in main ) -->
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
-
-        <p>With a hands-on approach, I have developed skills in both web development and automotive maintenance. I am pursuing an Associate of Applied Science at Johnson County Community College, with coursework in web development and automotive repair. I am dedicated to continuous learning and applying my knowledge to real-world scenarios.</p>
-
-        <h3>Skills</h3>
-        <ul>
+      <h2>About Me</h2>
+      <div id="about-box">
+        <div id = "about-paragrah">
+          <p>
+            With a hands-on approach, I have developed skills in both web
+            development and automotive maintenance. I am pursuing an Associate of
+            Applied Science at Johnson County Community College, with coursework in
+            web development and automotive repair. I am dedicated to continuous
+            learning and applying my knowledge to real-world scenarios.
+          </p>
+        </div>  
+        <div id = "about-skill-list">
+          <h3 class="list-header">Skills</h3>
+          <ul>
             <li>HTML, CSS, JavaScript</li>
             <li>Bash, PowerShell</li>
             <li>Frontend development</li>
             <li>Automotive maintenance and repair</li>
-        </ul>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
@@ -49,16 +70,20 @@
 
     <!-- Footer include -->
     <div id="footer"></div>
-    
+
     <!-- Include header and footer -->
     <script src="/js/template loader.js"></script>
-    
+
     <script type="module">
-        import {displayProjectCards} from '/js/projects.js'; // imports main function from projects.js
-        import {displayContact} from '/js/contact.js' // imports contact load function
-        
-        displayProjectCards(true, [1, 5, 6]); // displays projects by ids [1, 5, 6]
-        displayContact(true); // true simply means the contact keeps the generic h2 element, also loads the form
-        </script>
-</body>
+      import { displayProjectCards } from "/js/projects.js"; // imports main function from projects.js
+      import { displayContact } from "/js/contact.js"; // imports contact load function
+
+      displayProjectCards(true, [1, 5, 6]); // displays projects by ids [1, 5, 6]
+      displayContact(true); // true simply means the contact keeps the generic h2 element, also loads the form
+
+      /* Notes:
+            We should have the display projects display them based on the screen size.
+        */
+    </script>
+  </body>
 </html>

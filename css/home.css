@@ -1,10 +1,51 @@
-/* header */
+/* Introduction */
 
-/* intro */
+#introduction {
+  margin: 15px 10px;
+  padding-left: 10px;
+
+  /* border: 1px solid pink; */
+}
+
+#introduction h1 {
+  margin-bottom: 5px;
+
+  /* color: pink; */
+}
+
+#introduction h3 {
+  /* color: red; */
+}
+
+#introduction p {
+  float: default; /* pointless rule meant to remove a visually irritating error */
+  margin-left: 10px;
+  /* opacity: 90%; meant to draw emphasis */
+}
+
+#introduction span {
+  margin-left: 15px;
+}
 
 /* Showcase (projects) */
 
 /* About */
+#about {
+  /* display: flex; */
+  /* background-color: brown; */
+}
+#about-box{
+  display: flex;
+  justify-content: space-evenly;
+}
+#about-paragraph {
+  flex-grow: 1;
+  color: red;
+  background-color: blue;
+}
+#about-skill-list {
+  flex-grow: 3;
+}
 
 /* Contact */
 
