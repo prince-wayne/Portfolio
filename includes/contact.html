@@ -1,13 +1,21 @@
-
 <section id="contact">
     <h2 id = "contact-form-header">Contact Me</h2>
     <form id = "contact-form" action="https://formspree.io/f/xeojqdzr" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+        <div class="contact-top-box">
+            <div class="name-box">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="email-box">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+        <div class="message-box">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div> 
+
         <button type="submit">Send</button>
     </form>
 </section>

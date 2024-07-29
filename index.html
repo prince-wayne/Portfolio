@@ -38,13 +38,16 @@
       <div id="project-cards-container">
         <!-- article * 3 (these each contain a card, we can select these multiple ways though we need to be consistent in how we do this in main ) -->
       </div>
+      <h4>
+        <a href="/projects.html">View All</a>
+      </h4>
     </section>
 
     <!-- About Section -->
     <section id="about">
-      <h2>About Me</h2>
       <div id="about-box">
-        <div id = "about-paragrah">
+        <div id = "about-paragraph">
+          <h2>About Me</h2>
           <p>
             With a hands-on approach, I have developed skills in both web
             development and automotive maintenance. I am pursuing an Associate of
@@ -54,19 +57,18 @@
           </p>
         </div>  
         <div id = "about-skill-list">
-          <h3 class="list-header">Skills</h3>
+          <h2 class="list-header">Skills</h2>
           <ul>
             <li>HTML, CSS, JavaScript</li>
             <li>Bash, PowerShell</li>
             <li>Frontend development</li>
-            <li>Automotive maintenance and repair</li>
           </ul>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <div id="contact-container"></div>
+    <div id="contact-container" class="contact-section"></div>
 
     <!-- Footer include -->
     <div id="footer"></div>
@@ -81,9 +83,7 @@
       displayProjectCards(true, [1, 5, 6]); // displays projects by ids [1, 5, 6]
       displayContact(true); // true simply means the contact keeps the generic h2 element, also loads the form
 
-      /* Notes:
-            We should have the display projects display them based on the screen size.
-        */
+      window.alert("this version is incomplete, desktop/laptop is perfered, tablets/phones could have styling or placement issues");
     </script>
   </body>
 </html>

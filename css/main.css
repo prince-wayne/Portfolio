@@ -1,3 +1,4 @@
+/* Main */
 :root {
   /* Dark Charcoal */
   --background-color: #121212;
@@ -19,13 +20,13 @@
   --link-color: #03a9f3;
 
   box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
   padding: 0;
-
   background-color: var(--background-color);
   color: var(--primary-text);
 }
@@ -53,6 +54,16 @@ h5 {
 h6 {
   color: var(--secondary-text);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
 
 /* The Mobile version will likely have a dropdown  */
 
@@ -104,8 +115,16 @@ nav a:hover {
   background-color: var(--btn-Background);
 }
 
-/* Project Showcase (4 uses) */
-.projects > h2 {
+/* Project Section */
+
+/* root element: projects section. */
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+/* section header */
+.projects>h2 {
   color: var(--accent-color-2);
   font-size: 2em;
   margin-bottom: 16px;
@@ -113,7 +132,8 @@ nav a:hover {
   font-weight: bold;
 }
 
-.projects > div {
+/* section container for projects */
+.projects>div {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -121,47 +141,180 @@ nav a:hover {
   padding: 0 10px;
 }
 
-.projects > div article {
-  
+/* project cards */
+.projects>div article {
   width: 200px;
   height: 300px;
   padding: 16px;
   margin: 16px 0;
-  
+
   border: 1px solid var(--link-color);
   box-shadow: 0 4px 8px var(--accent-color-1);
   border-radius: 8px;
-  
+
   background-color: var(--btn-Background);
   transition: box-shadow 0.3s ease;
 }
 
-.projects > div article:hover {
+/* project card hover affect */
+.projects>div article:hover {
   box-shadow: 0 8px 16px var(--accent-color-1);
 }
 
-.projects > div article img {
+/* project card img */
+.projects>div article img {
   width: 100%;
-
+  border-radius: 8px;
 }
 
-.projects > div article h3 {
-  color: var(--accent-color-2);
+/* project card header */
+.projects>div article h3 {
+  color: var(--accent-color-1);
   font-size: 1.5em;
   margin-bottom: 8px;
 }
 
-.projects > div article p {
+/* project cards paragraph */
+.projects>div article p {
   color: var(--primary-text);
   margin-bottom: 16px;
 }
 
-.projects > div article a {
+/* project cards links */
+.projects>div article a {
   color: var(--primary-text);
   text-decoration: none;
   font-weight: bold;
 }
 
-.projects > div article  a:hover {
+/* project cards link hover affect */
+.projects>div article a:hover {
   color: var(--link-color);
+}
+
+/* project section link btn (to projects pages) */
+.projects>h4 {
+  display: inline;
+  margin: 0;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--highlight-color);
+  opacity: 80%;
+  padding: 8px 16px;
+  background-color: var(--btn-Background);
+  /* Same background as project cards */
+
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+  /* Added transitions */
+
+  justify-self: center;
+  align-self: center;
+}
+
+.projects>h4 a {
+  color: var(--primary-text);
+  /* Same text color as project cards */
+  text-decoration: none;
+}
+
+.projects>h4:hover {
+  opacity: 100%;
+  background-color: var(--highlight-color);
+  /* Change background on hover for emphasis */
+  box-shadow: var(--accent-color-1) 0 0 5px 5px;
+}
+
+.projects>h4:hover a {
+  color: var(--btn-text);
+  /* Change text color on hover */
+
+}
+
+/* Contact */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  text-align: center;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+label {
+  margin: 0 10px;
+}
+
+form input, form textarea {
+  border: none;
+  border-radius: 8px;
+  padding: 4px 8px;
+  
+  background-color: var(--btn-Background);
+  color: var(--accent-color-1);
+}
+
+form div {
+  width: 60%;
+  align-self: center;
+}
+
+.contact-top-box {
+  margin: 10px 0;
+}
+
+.contact-top-box div {
+  display: inline;
+  margin: 10px 25px;
+  width: 50%;
+  
+}
+
+.message-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-box textarea {
+  resize: none;
+  height: 100px;
+  width: 60%;
+  margin: 15px 0;
+}
+
+form button {
+  display: inline;
+  margin: 0;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--highlight-color);
+  opacity: 80%;
+  padding: 8px 16px;
+  background-color: var(--btn-Background);
+  color: var(--primary-text);
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+  /* Added transitions */
+
+  justify-self: center;
+  align-self: center;
+}
+
+form button:hover {
+  opacity: 100%;
+  background-color: var(--highlight-color);
+  box-shadow: var(--accent-color-1) 0 0 5px 5px;
+}
+
+footer {
+  text-align: center;
+  margin: 50px 0px 15px 0px;
 }

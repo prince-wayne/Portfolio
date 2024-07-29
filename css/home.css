@@ -1,26 +1,21 @@
 /* Introduction */
 
 #introduction {
-  margin: 15px 10px;
-  padding-left: 10px;
-
-  /* border: 1px solid pink; */
+  margin-bottom: 25px;
+  padding: 25px 30px;
+  text-align: center;
 }
 
 #introduction h1 {
   margin-bottom: 5px;
-
-  /* color: pink; */
 }
 
-#introduction h3 {
-  /* color: red; */
+#introduction h4 {
+  opacity: 40%;
 }
 
 #introduction p {
-  float: default; /* pointless rule meant to remove a visually irritating error */
-  margin-left: 10px;
-  /* opacity: 90%; meant to draw emphasis */
+  padding: 0px 30px;
 }
 
 #introduction span {
@@ -31,22 +26,73 @@
 
 /* About */
 #about {
-  /* display: flex; */
-  /* background-color: brown; */
+  margin: 25px 0;
+  padding: 25px 30px;
 }
+
 #about-box{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
 }
+
+#about-paragraph h4 {
+  text-align: center;
+}
+
 #about-paragraph {
-  flex-grow: 1;
-  color: red;
-  background-color: blue;
+  display: inline;
+  flex-basis: 50%;
+  padding: 0 10%;
+  text-align: center;
 }
+
 #about-skill-list {
-  flex-grow: 3;
+  display: inline;
+  flex-basis: 50%;
+  text-align: center;
+}
+
+#about-skill-list > ul  {
+  list-style: none;
+  text-align: center;
+  padding: 0;
 }
 
 /* Contact */
+
+/* note
+
+    <div class = "style"> 
+      <h...> header </h...>
+      <section id="contact">
+          <h2 id = "contact-form-header">Contact Me</h2>
+          <form id = "contact-form" action="https://formspree.io/f/xeojqdzr" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+      </section>
+
+    </div>
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */

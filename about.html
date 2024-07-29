@@ -56,9 +56,8 @@
             can leverage my eye for design and technical expertise to build engaging user interfaces.</p>
     </section>
 
-    <section class="contact">
+    <section class="contact-section">
         <h2>Get in Touch</h2>
-        <p>Ready to start a project together? Fill out the form below, and let's turn your vision into reality.</p>
         <div id="contact-container"></div>
     </section>
 
@@ -73,7 +72,7 @@
 
     <!-- scripts -->
     <script type="module" src="/js/projects.js"></script>
-    <script type="module" src="/js/contact.js"></script>
+    <script type="module" src="/js/contact.js"></script> <!-- modules don't need to be included, test and remove if capable after style phases -->
 
     <script type="module">
         // to load projects
@@ -82,8 +81,9 @@
         import {displayContact} from '/js/contact.js'
         
         displayProjectCards(true, [2, 5, 1]); // select the ones we want to feature later
-        displayHeroSection('About');
-        displayContact(false);
+        displayHeroSection('About'); // displays our hero section based on our data file
+        displayContact(false); // displays the contact without the header
+
     </script>
 </body>
 
