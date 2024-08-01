@@ -41,7 +41,7 @@ function displayProjectCards(limitEnabled, projectIDs) {
                         img: "/images/placeholder/img-placeholder.png"
                     };
                     // card.querySelector('.project-image img').src = project.images.desktop;
-                    card.querySelector('.project-image img').src = placeholders.img;
+                    card.querySelector('.project-image img').src = project.image;
                     card.querySelector('.project-image img').alt = project.title;
                     card.querySelector('.project-title').textContent = project.title;
                     card.querySelector('.project-description').textContent = project.description.short;

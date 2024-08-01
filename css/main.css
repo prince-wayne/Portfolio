@@ -19,14 +19,24 @@
   /* Sky Blue */
   --link-color: #03a9f3;
 
+  /* test colors - undertones */
+  --highlight-color-dark: #3d1f6b; /* Darker Deep Purple */
+  --accent-color-1-dark: #49136be0; /* Darker Purple */
+
+
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  text-align: center;
+
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
+
   background-color: var(--background-color);
   color: var(--primary-text);
 }
@@ -55,39 +65,82 @@ h6 {
   color: var(--secondary-text);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-align: center;
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  padding: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--btn-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color-1-dark);
+  border-radius: 8px;
+  margin-right: 4px; /* i want to put slight space from the right side */
 }
 
 
-/* The Mobile version will likely have a dropdown  */
 
+/* Buttons  */
+.btn {
+  display: inline-flex;
+  margin: 15px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--highlight-color);
+  padding: 8px 16px;
+  background-color: var(--btn-Background);
+  color: var(--primary-text);
+  align-self: center; 
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease, scale 0.5s ease;
+  /* transition: all 0.3 ease, scale 0.5 ease; */
+  opacity: 80%;
+}
+
+.btn:hover {
+  opacity: 100%;
+  background-color: var(--highlight-color);
+  box-shadow: var(--accent-color-1) 0 0 5px 5px;
+  scale: 1.05;
+}
+
+.btn a {
+  color: var(--primary-text);
+  text-decoration: none;
+}
+
+.btn:hover a {
+  color: var(--btn-text);
+}
+
+
+
+/* spacers idk i felt like it */
+.spacer {
+  padding: 50px 0; /* this was why the colors wasn't showing boy */
+  
+}
+
+
+/* header */
+
+/* container */
 #header {
-  /* this the id of the container for the header */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid var(--accent-color-1);
-}
-
-header {
   /* this the tag name */
   display: flex;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
 
   padding: 20px;
-
-  justify-content: space-between;
-  align-items: center;
-}
-
-header h1 {
-  color: var(--accent-color-1);
-  margin: 0;
+  
+  background-color: var(--background-color);
+  border-bottom: 2px solid var(--accent-color-1);
 }
 
 nav ul {
@@ -111,42 +164,39 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--highlight-color);
+  color: var(--highlight-color-dark);
   background-color: var(--btn-Background);
 }
 
 /* Project Section */
 
-/* root element: projects section. */
-.projects {
-  display: flex;
-  flex-direction: column;
-}
-
-/* section header */
+/* Section heading */
 .projects>h2 {
   color: var(--accent-color-2);
   font-size: 2em;
   margin-bottom: 16px;
-  text-align: center;
+   
   font-weight: bold;
 }
 
 /* section container for projects */
-.projects>div {
+#project-cards-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+  /* gap: 25px */
+  margin: 15px;
 
   padding: 0 10px;
 }
 
 /* project cards */
-.projects>div article {
-  width: 200px;
-  height: 300px;
+.project-card {
+  width: 210px;
+  height: 350px;
   padding: 16px;
-  margin: 16px 0;
+  margin: 20px 0;
 
   border: 1px solid var(--link-color);
   box-shadow: 0 4px 8px var(--accent-color-1);
@@ -157,90 +207,52 @@ nav a:hover {
 }
 
 /* project card hover affect */
-.projects>div article:hover {
+.project-card:hover {
   box-shadow: 0 8px 16px var(--accent-color-1);
 }
 
 /* project card img */
-.projects>div article img {
+.project-card img {
   width: 100%;
+  height: 150px;
+
   border-radius: 8px;
 }
 
 /* project card header */
-.projects>div article h3 {
+.project-card h3 {
   color: var(--accent-color-1);
   font-size: 1.5em;
   margin-bottom: 8px;
 }
 
 /* project cards paragraph */
-.projects>div article p {
+.project-card p {
   color: var(--primary-text);
   margin-bottom: 16px;
 }
 
 /* project cards links */
-.projects>div article a {
+.project-card a {
   color: var(--primary-text);
   text-decoration: none;
   font-weight: bold;
 }
 
 /* project cards link hover affect */
-.projects>div article a:hover {
+.project-card a:hover {
   color: var(--link-color);
-}
-
-/* project section link btn (to projects pages) */
-.projects>h4 {
-  display: inline;
-  margin: 0;
-  margin-top: 15px;
-  border-radius: 8px;
-  border: 1px solid var(--highlight-color);
-  opacity: 80%;
-  padding: 8px 16px;
-  background-color: var(--btn-Background);
-  /* Same background as project cards */
-
-  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
-  /* Added transitions */
-
-  justify-self: center;
-  align-self: center;
-}
-
-.projects>h4 a {
-  color: var(--primary-text);
-  /* Same text color as project cards */
-  text-decoration: none;
-}
-
-.projects>h4:hover {
-  opacity: 100%;
-  background-color: var(--highlight-color);
-  /* Change background on hover for emphasis */
-  box-shadow: var(--accent-color-1) 0 0 5px 5px;
-}
-
-.projects>h4:hover a {
-  color: var(--btn-text);
-  /* Change text color on hover */
-
 }
 
 /* Contact */
 
+/* container */
 .contact-section {
   display: flex;
   flex-direction: column;
 }
 
-form {
-  text-align: center;
-}
-
+/*  the form */
 .contact-section form {
   display: flex;
   flex-direction: column;
@@ -248,10 +260,12 @@ form {
   align-content: center;
 }
 
+/* he box labels */
 label {
   margin: 0 10px;
 }
 
+/* inputs and text area */
 form input, form textarea {
   border: none;
   border-radius: 8px;
@@ -261,15 +275,19 @@ form input, form textarea {
   color: var(--accent-color-1);
 }
 
+/* name and input combos */
 form div {
+  margin: 10px 0;
   width: 60%;
   align-self: center;
 }
 
+/* the top box containing the name and email */
 .contact-top-box {
-  margin: 10px 0;
+  /* margin: 10px 0; */
 }
 
+/* the indivual boxes */
 .contact-top-box div {
   display: inline;
   margin: 10px 25px;
@@ -277,6 +295,7 @@ form div {
   
 }
 
+/* the container for label and textarea */
 .message-box {
   display: flex;
   flex-direction: column;
@@ -284,6 +303,7 @@ form div {
   align-items: center;
 }
 
+/* i hope this comment is unnecessary */
 .message-box textarea {
   resize: none;
   height: 100px;
@@ -291,30 +311,7 @@ form div {
   margin: 15px 0;
 }
 
-form button {
-  display: inline;
-  margin: 0;
-  margin-top: 15px;
-  border-radius: 8px;
-  border: 1px solid var(--highlight-color);
-  opacity: 80%;
-  padding: 8px 16px;
-  background-color: var(--btn-Background);
-  color: var(--primary-text);
-  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
-  /* Added transitions */
-
-  justify-self: center;
-  align-self: center;
-}
-
-form button:hover {
-  opacity: 100%;
-  background-color: var(--highlight-color);
-  box-shadow: var(--accent-color-1) 0 0 5px 5px;
-}
-
+/* self explanatory */
 footer {
-  text-align: center;
   margin: 50px 0px 15px 0px;
 }

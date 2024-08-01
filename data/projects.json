@@ -2,11 +2,7 @@
     {
         "id": 1,
         "title": "Generator Page",
-        "images": {
-            "desktop": "images/generator-page.png",
-            "phone": "",
-            "tablet": ""
-        },
+        "image" : "/images/project previews/gen page.png",
         "link": "Projects/generator-page/index.html",
         "description": {
             "short": "A dynamic generator with custom inputs, designed for beginners learning the DOM API.",
@@ -16,11 +12,7 @@
     {
         "id": 2,
         "title": "Single Price Grid Component",
-        "images": {
-            "desktop": "images/single-price-grid-component.png",
-            "phone": "",
-            "tablet": ""
-        },
+        "image": "/images/project previews/pricing gird card.png",
         "link": "Projects/single-price-grid-component-master/index.html",
         "description": {
             "short": "A responsive single price grid component for desktop.",
@@ -30,11 +22,7 @@
     {
         "id": 3,
         "title": "QR Code Component",
-        "images": {
-            "desktop": "images/qr-code-component.png",
-            "phone": "",
-            "tablet": ""
-        },
+        "image": "/images/project previews/qr code.png",
         "link": "Projects/qr-code-component-main/index.html",
         "description": {
             "short": "A simple QR code component.",
@@ -44,11 +32,7 @@
     {
         "id": 4,
         "title": "Blog Preview Card",
-        "images": {
-            "desktop": "images/blog-preview-card.png",
-            "phone": "",
-            "tablet": ""
-        },
+        "image": "/images/project previews/blog post.png",
         "link": "Projects/blog-preview-card-main/index.html",
         "description": {
             "short": "A preview card for blog posts.",
@@ -58,11 +42,7 @@
     {
         "id": 5,
         "title": "Testimonials Grid Section",
-        "images": {
-            "desktop": "images/testimonials-grid-section.png",
-            "phone": "",
-            "tablet": ""
-        },
+        "image": "/images/project previews/testimonial.png",
         "link": "Projects/testimonials-grid-section-main/index.html",
         "description": {
             "short": "A grid layout for testimonials.",
@@ -72,11 +52,7 @@
     {
         "id": 6,
         "title": "Product Preview Card",
-        "images": {
-            "desktop": "images/product-preview-card.png",
-            "phone": "",
-            "tablet": ""
-        },
+        "image": "/images/project previews/product card.png",
         "link": "Projects/product-preview-card-component-main/index.html",
         "description": {
             "short": "A preview card for products.",
