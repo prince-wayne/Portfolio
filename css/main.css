@@ -244,6 +244,64 @@ nav a:hover {
   color: var(--link-color);
 }
 
+/* Skills Secetion */
+/* skill set container */
+.skill-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+/*   width: 220px; */
+}
+
+.skill {
+  position: relative;
+  width: 50px; /* Adjust the size of the icon */
+  height: 50px; /* Adjust the size of the icon */
+  margin: 10px;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  /*
+  background-color: black; /* Default background color for icons 
+  border-radius: 50%;  /* Makes the icon circular 
+  */
+}
+
+.indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: lightgray; /* Default background color for empty indicator */
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  border: 2px solid #fff; /* Optional: border to make the indicator stand out */
+}
+
+/* skill levels  */
+.skill-lvl-1 .indicator {
+  /* casual use / not known */
+  background-color: grey;
+}
+
+.skill-lvl-2 .indicator{
+  /* currently learning */
+  background-color: yellow;
+}
+
+.skill-lvl-3 .indicator{
+  /* completed lessons and comfortable using professionally */
+  background-color: green;
+}
+
+
+
 /* Contact */
 
 /* container */
