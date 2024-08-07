@@ -16,8 +16,8 @@
 
 <body>
   <!-- include Header -->
-  <div clss="" id="header"></div>
-
+  <div id="header"></div>
+  <!-- <div class="spacer" id="hero-section-spacer"></div> -->
   <section class="hero-section">
     <h1>Welcome to My Portfolio</h1>
     <p>
@@ -30,7 +30,7 @@
     <h2>Where should we start?</h2>
     <div class="inline-btn-group">
       <h4 class="btn hero-btn"> <a href="#about-internal-link">Learn More</a></h4>
-      <h4 class="btn hero-btn main-btn"><a href="#contact-internal-link">Contact Me</a></h4>
+      <h4 class="btn hero-btn main-btn"><a href="#contact-internal-link">Reach out to me</a></h4>
       <h4 class="btn hero-btn"><a href="#projects-internal-link">See My Work</a></h4>
     </div>
   </section>
@@ -49,7 +49,7 @@
       <div id="about-skill-list">
         <h2 class="list-header">Skills</h2>
         <div id="skill-set-container" class="skillset"></div>
-  
+
       </div>
     </div>
     <h4 class="btn"><a href="/about.html">Learn More</a></h4>
@@ -67,8 +67,15 @@
       <a href="/projects.html">View All</a>
     </h4>
   </section>
+
+  <div class="spacer" id="social-media-internal-link"></div>
+
+  <h2>See me on</h2>
+  <div id="social-media-container"></div>
+
   <!-- empty element to create more space -->
   <div id="contact-internal-link" class="spacer"></div>
+
   <!-- Contact Section -->
   <div id="contact-container" class="contact-section"></div>
 
@@ -78,15 +85,17 @@
   <!-- Include header and footer -->
   <script src="/js/template loader.js"></script>
   <script src="/js/skill set.js"></script>
+  <script type="module" src="/js/main.js"></script>
 
   <script type="module">
     import { displayProjectCards } from "/js/projects.js"; // imports main function from projects.js
-      import { displayContact } from "/js/contact.js"; // imports contact load function
 
       displayProjectCards(true, [1, 5, 6]); // displays projects by ids [1, 5, 6]
-      displayContact(true); // true simply means the contact keeps the generic h2 element, also loads the form
-
-      //window.alert("this version is incomplete, desktop/laptop is perfered, tablets/phones could have styling or placement issues");
+      // displayContact(true); <- moved to main, needs a update arcoss pages
+      $(function() {
+        $('#social-media-container').load('/includes/social-media.html');
+      })
+  
     </script>
 </body>
 

@@ -1,5 +1,15 @@
-function displayContact(header) {
-    if (!header) {
+function displayContact() {
+    // we are transforming this to be used in the main.js
+    const path = window.location.pathname;
+    console.log(path);
+    /*  
+        true [home, projects, resume]
+        false [about, contact]
+    */
+    // this list is for the pages that display a header, i could've reversed it to make it faster (a single milisecond lol)
+    const list = ['/index.html', '/projects.html', '/resume.html'];
+    // header would go here if we were to revert this file
+    if (list.includes(path) == false) {
         $(document).ready(function() {
             // Ensure the contact form is loaded
             $('#contact-container').load('/includes/contact.html', function(response, status, xhr) {

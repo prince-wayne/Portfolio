@@ -1,0 +1,11 @@
+.introduction, .motivation {
+    padding: 10px 25px;
+}
+
+.introduction {
+    margin-top: 25px;
+}
+
+.motivation {
+    margin-bottom: 25px;
+}

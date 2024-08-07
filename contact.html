@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/contact.css">
     <title>Contact - Tyshawn Andrews</title>
 </head>
 <body>
@@ -12,24 +13,41 @@
             <h1 class = "construction-message">Under Contruction</h1>
         </div> 
     -->
-    <section id = 'header'></section>
-    <section class="hero"></section>
+    <div id = 'header'></div>
+    
+    <div class="spacer"></div>
+    <div class="hero-section">
+        <h1>
+            Connect With Me Through
+        </h1>
+        <h4 class="btn"><a href="#contact-box-internal-link">Email</a></h4>
+        <h4 class="btn"><a href="#social-media-internal-link">Social Media</a></h4>
+    </div>
+
+    <div class="spacer"></div>
+    <div id="social-media-internal-link" class="spacer"></div>
+
+    <section class="social-media-section">
+        <h2>See me grow</h2>
+        <div id="social-media-container"></div>
+    </section>
+    
+    <div id="contact-box-internal-link" class="spacer"></div>
 
     <section class="contact-preface">
         <div class="contact-message-box">
-            <h2 class="contact-hook-header" id="header-1">
+            <h2 class="contact-hook-header">
                 Get in Touch
             </h2>
-            <p class="contact-hook-message" id="message-1">
-                I'm eager to bring my skills in web development to your team. Whether you're looking for a dedicated front-end developer, need help with creating visually appealing websites, or want to explore collaboration opportunities, I'm here to contribute and achieve great results together.
-            </p>
-            <p class="contact-hook-message" id="message-2">
-                Ready to discuss how I can add value to your team? Fill out the form below, and I'll promptly get back to you. Let's make impactful web solutions a reality!
+            <p class="contact-hook-message">
+                <span>I'm eager to bring my skills in web development to your team.</span>Whether you're looking for a dedicated front-end developer, need help with creating visually appealing websites, or want to explore collaboration opportunities, I'm here to contribute and achieve great results together. Simply fill out the form below and i will answer as soon as i can.
             </p>
         </div>
-        <img src="#" alt="A relevant image" id="contact-hook-img">
+        <img src="#" alt="lady pickinup the phone" id="contact-hook-img">
     </section>
+
     <!-- this is meant to throw into the contact form, like a little nudge ecouraging contact through email -->
+    <div class="spacer"></div>
 
     <div class="contact-section" id="contact-container"></div>
 
@@ -44,12 +62,16 @@
 
     <!-- Contact Form -->
     <script type="module" src="/js/contact.js"></script>
-    <script src="/js/submit.js"></script>
+    <!-- <script src="/js/submit.js"></script> -->
 
     <script type = 'module'>
         import {displayContact} from '/js/contact.js';
         
-        displayContact(false);
+        displayContact();
+
+        $(function() {
+        $('#social-media-container').load('/includes/social-media.html');
+      })
     </script>
 
 </body>

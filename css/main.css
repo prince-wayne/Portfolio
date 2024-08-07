@@ -20,8 +20,10 @@
   --link-color: #03a9f3;
 
   /* test colors - undertones */
-  --highlight-color-dark: #3d1f6b; /* Darker Deep Purple */
-  --accent-color-1-dark: #49136be0; /* Darker Purple */
+  --highlight-color-dark: #3d1f6b;
+  /* Darker Deep Purple */
+  --accent-color-1-dark: #49136be0;
+  /* Darker Purple */
 
 
   box-sizing: border-box;
@@ -39,6 +41,10 @@ body {
 
   background-color: var(--background-color);
   color: var(--primary-text);
+}
+
+section {
+  margin: 25px 15px;
 }
 
 h1 {
@@ -65,6 +71,19 @@ h6 {
   color: var(--secondary-text);
 }
 
+p {
+  padding: 10px 20px;
+}
+
+p span {
+  margin-left: 5px;
+}
+
+li {
+  list-style-type: none;
+}
+
+
 
 /* Scroll Bar */
 
@@ -80,7 +99,8 @@ h6 {
 ::-webkit-scrollbar-thumb {
   background-color: var(--accent-color-1-dark);
   border-radius: 8px;
-  margin-right: 4px; /* i want to put slight space from the right side */
+  margin-right: 4px;
+  /* i want to put slight space from the right side */
 }
 
 
@@ -88,13 +108,13 @@ h6 {
 /* Buttons  */
 .btn {
   display: inline-flex;
-  margin: 15px 10px;
+  margin: 35px 10px;
   border-radius: 8px;
   border: 1px solid var(--highlight-color);
   padding: 8px 16px;
   background-color: var(--btn-Background);
   color: var(--primary-text);
-  align-self: center; 
+  align-self: center;
   transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease, scale 0.5s ease;
   /* transition: all 0.3 ease, scale 0.5 ease; */
   opacity: 80%;
@@ -116,20 +136,39 @@ h6 {
   color: var(--btn-text);
 }
 
-
-
 /* spacers idk i felt like it */
 .spacer {
-  padding: 50px 0; /* this was why the colors wasn't showing boy */
-  
+  padding: 60px 0;
+  /* this was why the colors wasn't showing boy */
 }
 
+.hero-section {
+  margin: 20px 0;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.hero-section h1 {
+  margin-top: 45px;
+}
+
+.hero-section p {
+  margin: 45px 0;
+  padding: 20px;
+}
+
+.hero-section h2 {
+  margin-bottom: 25px;
+}
+
+.hero-section .btn {
+  margin-bottom: 30px;
+}
 
 /* header */
 
 /* container */
 #header {
-  /* this the tag name */
   display: flex;
   position: sticky;
   top: 0px;
@@ -138,7 +177,7 @@ h6 {
   align-items: center;
 
   padding: 20px;
-  
+
   background-color: var(--background-color);
   border-bottom: 2px solid var(--accent-color-1);
 }
@@ -175,18 +214,18 @@ nav a:hover {
   color: var(--accent-color-2);
   font-size: 2em;
   margin-bottom: 16px;
-   
+
   font-weight: bold;
 }
 
 /* section container for projects */
 #project-cards-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* gap: 25px */
-  margin: 15px;
+  gap: 25px 35px;
+  /* margin: 15px; */
 
   padding: 0 10px;
 }
@@ -196,7 +235,6 @@ nav a:hover {
   width: 210px;
   height: 350px;
   padding: 16px;
-  margin: 20px 0;
 
   border: 1px solid var(--link-color);
   box-shadow: 0 4px 8px var(--accent-color-1);
@@ -248,25 +286,23 @@ nav a:hover {
 /* skill set container */
 .skill-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
-/*   width: 220px; */
+  gap: 15px 30px;
 }
 
 .skill {
   position: relative;
-  width: 50px; /* Adjust the size of the icon */
-  height: 50px; /* Adjust the size of the icon */
-  margin: 10px;
+  width: 75px;
+  /* Adjust the size of the icon */
+  height: 75px;
+  /* Adjust the size of the icon */
+  /* margin: 15px; */
 }
 
 .icon {
   width: 100%;
   height: 100%;
-  /*
-  background-color: black; /* Default background color for icons 
-  border-radius: 50%;  /* Makes the icon circular 
-  */
 }
 
 .indicator {
@@ -276,12 +312,14 @@ nav a:hover {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: lightgray; /* Default background color for empty indicator */
+  background-color: lightgray;
+  /* Default background color for empty indicator */
   color: #fff;
   text-align: center;
   line-height: 20px;
   font-size: 12px;
-  border: 2px solid #fff; /* Optional: border to make the indicator stand out */
+  border: 2px solid #fff;
+  /* Optional: border to make the indicator stand out */
 }
 
 /* skill levels  */
@@ -290,14 +328,40 @@ nav a:hover {
   background-color: grey;
 }
 
-.skill-lvl-2 .indicator{
+.skill-lvl-2 .indicator {
   /* currently learning */
   background-color: yellow;
 }
 
-.skill-lvl-3 .indicator{
+.skill-lvl-3 .indicator {
   /* completed lessons and comfortable using professionally */
   background-color: green;
+}
+
+
+/* social media section */
+
+#social-media-container {
+  margin: 20px 0;
+}
+
+/* note: i used the skill class on these elements to share their styles */
+.social-icons .badge {
+  margin: 5px 15px;
+  width: 100px;
+  height: 100px;
+  /* trans - had to leave */
+}
+
+/* only one instance currently, growing to two pre production but more are likely to come */
+.bi-section-container {
+  display: flex;
+  margin: 10px 15px;
+}
+
+.bi-section-container section {
+  display: inline;
+  width: 50%;
 }
 
 
@@ -314,7 +378,7 @@ nav a:hover {
 .contact-section form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
 }
 
@@ -324,33 +388,31 @@ label {
 }
 
 /* inputs and text area */
-form input, form textarea {
+form input,
+form textarea {
   border: none;
   border-radius: 8px;
   padding: 4px 8px;
-  
+
   background-color: var(--btn-Background);
   color: var(--accent-color-1);
 }
 
 /* name and input combos */
 form div {
-  margin: 10px 0;
+  margin: 10px;
   width: 60%;
   align-self: center;
 }
 
 /* the top box containing the name and email */
-.contact-top-box {
-  /* margin: 10px 0; */
-}
 
 /* the indivual boxes */
 .contact-top-box div {
   display: inline;
   margin: 10px 25px;
   width: 50%;
-  
+
 }
 
 /* the container for label and textarea */
