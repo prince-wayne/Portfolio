@@ -1,0 +1,154 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+.container {
+    display: flex;
+
+    margin: 10px;
+    padding: 10px;
+
+    background-color: lightblue;
+    border-radius: 20px;
+
+}
+
+.card {
+    background-color: lightslategray;
+
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+
+}
+
+h3,
+p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.right-section {
+    display: flex;
+    flex-basis: calc(100%/4);
+    align-items: stretch;
+}
+
+.left-section {
+    flex-basis: calc(300%/4);
+}
+
+.top-section,
+.bottom-section {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* size groups */
+#C1,
+#C4 {
+    flex-basis: calc(200%/3);
+}
+
+#C2,
+#C3 {
+    flex-basis: calc(100%/3);
+}
+
+p,
+.tag {
+    font-weight: 500;
+}
+
+/* author tag */
+.box-tag {
+    width: 100%;
+    margin-left: 10px;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 100%;
+}
+
+.tag-group {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    width: 75%;
+
+}
+
+.name,
+.tag {
+    display: block;
+    padding: 0px;
+    margin: 2px;
+    width: 90%;
+}
+
+/* colors and ocpacity */
+.white-text {
+    color: white;
+}
+
+.black-text {
+    color: black;
+}
+
+.ocp {
+    opacity: 70%;
+}
+
+/* box specific */
+#C1 {
+    /* background-image: url("C:\Users\Tyshawn E. Andrews\Desktop\Tech & Programing\Coding Files\active projects\WebChallenge2-2\testimonials-grid-section-main\images\bg-pattern-quotation.svg"); */
+    background-color: purple;
+}
+
+/* 
+    testimonials-grid-section-main\images\bg-pattern-quotation.svg
+
+    C:\Users\Tyshawn E. Andrews\Desktop\Tech & Programing\Coding Files\active projects\WebChallenge2-2\testimonials-grid-section-main\images\bg-pattern-quotation.svg
+*/
+#C2 {
+    background-color: white;
+}
+
+#C3 {
+    background-color: hsl(217, 19%, 35%);
+}
+
+#C4 {
+    background-color: hsl(217, 19%, 14%);
+}
+
+#C5 {
+    background-color: white;
+}
+
+@media (max-width: 700px) {
+
+    .container,
+    .left-section,
+    .top-section,
+    .bottom-section {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-basis: 100%;
+    }
+
+}

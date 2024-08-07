@@ -1,0 +1,139 @@
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    background-color: lavender;
+    margin: 0px;
+    padding: 0px;
+    color: whitesmoke;
+    /* Colors */
+    --main-color-one: hsl(179, 74%, 32%);
+    --main-color-two: hsl(71, 77%, 48%);
+    --main-color-three: hsl(179, 52%, 45%);
+    --secondary-color-one: hsl(204, 43%, 93%);
+    --secondary-color-two: hsl(218, 22%, 67%);
+    --secondary-color-three: whitesmoke;
+}
+.container {
+    display: inline-block;
+
+    position: absolute;
+    left: 22.5%;
+    top: 10vh;
+    
+    box-sizing: content-box;
+    margin: 10px;
+    border-radius: 25px;
+    width: 50%;
+
+    background-color: whitesmoke;
+    text-align: left;
+    overflow: hidden;
+}
+/*All Boxes*/ 
+.box {
+    box-sizing: content-box;
+
+    position: relative;
+    margin: 0px;
+    overflow: hidden; 
+}
+.box * {
+    padding-left: 25px;
+}
+/*Top Box*/
+.top-box {
+    width: 100%;
+    height: min-content;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    background-color: var(--secondary-color-three);
+
+}
+
+.top-box > h2 {
+    color: var(--main-color-one);
+}
+.top-box > h3 {
+    color: var(--main-color-two);
+}
+.top-box > p {
+    padding-right: 8%;
+    
+    color: var(--secondary-color-two);
+    line-height: 2rem;
+
+}
+/*bottom Boxes*/
+.left-box, .right-box {
+    display: inline-block;
+
+    width : 50%;
+    height: 250px;
+    
+    box-sizing: border-box;
+
+    background-color: var(--main-color-three);
+}
+/*left side box*/
+.left-box {
+    float: left;
+    background-color: var(--main-color-one);
+    padding-top: 15px;
+}
+
+#cost, #per-month {
+    display: inline;
+
+}
+#cost {
+    font-weight: 800;
+    margin-right: 0px;
+    padding-right: 0px;
+    font-size: 2rem;
+}
+#per-month {
+    margin-left: 0px;
+    padding-left: 0px;
+
+    color: var(--secondary-color-two);
+}
+.left-box > #sign-up:hover {
+    background-color: blue; 
+}
+.left-box > button#sign-up {
+    position: relative;
+    left: 15%;
+    
+    box-sizing: content-box;
+    width: 25%;
+    height: fit-content;
+
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px 70px;
+    
+    background-color: var(--main-color-two);
+    border: hidden;
+    color: white;
+    font-family: "Karla", sans-serif ;
+    font-weight: 800;
+}
+
+
+/*right box*/
+.right-box {
+    float: left;
+    line-height: 20px;
+}
+.right-box > h3 {
+    padding-top: 20px;
+}
+.right-box > p {
+    padding-right: 25%;
+    padding-bottom: 40px;
+
+    color: lightgray;
+}

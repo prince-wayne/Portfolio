@@ -1,0 +1,93 @@
+/* Page Reset */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inhertit;
+}
+/* basic footer from FEM */
+.attribution { 
+	font-size: 11px; 
+	text-align: center; 
+}
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+/* mobile first design */
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: hsl(47, 88%, 63%);
+	--placement: calc(var(--space)/2);
+	--space: calc(100% - var(--width));
+	--width: 350px;
+	font-size: 16px;
+	font-family: "Figtree", cursive, sans-serif;
+}
+.card {
+	position: relative;
+	width: 95%;
+	margin: 0px;
+	margin-bottom: 10px;
+	padding: 20px;
+	border-radius: 5%;
+	
+	background-color: white;
+	text-align: left;
+	border: 2px solid black;
+	box-shadow: 4px 4px black;
+	font-weight: 400;
+}
+.card * {
+	width: 100%;
+	margin: 10px 0px;
+	padding: 0px;
+}
+#tag {
+	width: fit-content;
+	padding: 5px;
+	margin: 20px 0px;
+	text-align: center;
+
+	border-radius: 15%;
+	background-color: hsl(47, 88%, 63%);
+	font-weight: 800;
+}
+/* #pub-date {} */
+#blog-title {
+	font-weight: 800;
+}
+#blog-title > a {
+	color: black;
+	text-decoration: none;
+}
+#blog-title > a:hover {
+	color:hsl(47, 88%, 50%);
+	cursor: pointer;
+}
+#description {
+	color: grey;
+	line-height: 1.2rem;
+}
+#author-footer {
+	display: block;
+}
+#author-img {
+	display: inline-block;
+	height: 35px;
+	width: auto;
+	vertical-align: middle;
+}
+#author-name {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+	margin-left: 5px;
+	font-weight: 800;
+}
+@media (min-width: 375px) {
+	.card {
+		width:var(--width);
+		left: var(--placement);
+	}
+}

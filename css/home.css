@@ -1,0 +1,56 @@
+/* Home */
+/* hero section */
+
+
+#name, #title {
+  color: var(--highlight-color);
+  font-weight: bold;
+}
+
+
+
+/* Showcase (projects) */
+
+/* About */
+#about {
+  margin: 20px 0;
+  padding: 25px 30px;
+}
+
+#about-box{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+
+#about-paragraph h4 {
+  text-align: center;
+}
+
+#about-paragraph {
+  display: inline;
+  flex-basis: 50%;
+  padding: 0 10%;
+  text-align: center;
+}
+
+#about-skill-list {
+  display: inline;
+  flex-basis: 50%;
+  text-align: center;
+}
+
+#about-skill-list > ul  {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+/* Contact */
+/* in main.css this is a compondent */
+
+
+/* Footer */
+/* also a compondent */
+

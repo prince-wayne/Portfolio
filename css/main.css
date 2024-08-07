@@ -1,0 +1,437 @@
+/* Main */
+:root {
+  /* Dark Charcoal */
+  --background-color: #121212;
+  /* Light Gray */
+  --primary-text: #e0e0e0;
+  /* Gray */
+  --secondary-text: #a0a0a0;
+  /*  Neon Purple */
+  --accent-color-1: #bb86fc;
+  /* Neal Teal */
+  --accent-color-2: #03dac6;
+  /*  Deep Purple */
+  --highlight-color: #3700b3;
+  /* Dark Gray */
+  --btn-Background: #1f1b24;
+  /* Light Gray */
+  --btn-text: #e0e0e0;
+  /* Sky Blue */
+  --link-color: #03a9f3;
+
+  /* test colors - undertones */
+  --highlight-color-dark: #3d1f6b;
+  /* Darker Deep Purple */
+  --accent-color-1-dark: #49136be0;
+  /* Darker Purple */
+
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--background-color);
+  color: var(--primary-text);
+}
+
+section {
+  margin: 25px 15px;
+}
+
+h1 {
+  color: var(--accent-color-1);
+}
+
+h2 {
+  color: var(--accent-color-2);
+}
+
+h3 {
+  color: var(--highlight-color);
+}
+
+h4 {
+  color: var(--link-color);
+}
+
+h5 {
+  color: var(--primary-text);
+}
+
+h6 {
+  color: var(--secondary-text);
+}
+
+p {
+  padding: 10px 20px;
+}
+
+p span {
+  margin-left: 5px;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  padding: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--btn-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color-1-dark);
+  border-radius: 8px;
+  margin-right: 4px;
+  /* i want to put slight space from the right side */
+}
+
+
+
+/* Buttons  */
+.btn {
+  display: inline-flex;
+  margin: 35px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--highlight-color);
+  padding: 8px 16px;
+  background-color: var(--btn-Background);
+  color: var(--primary-text);
+  align-self: center;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease, scale 0.5s ease;
+  /* transition: all 0.3 ease, scale 0.5 ease; */
+  opacity: 80%;
+}
+
+.btn:hover {
+  opacity: 100%;
+  background-color: var(--highlight-color);
+  box-shadow: var(--accent-color-1) 0 0 5px 5px;
+  scale: 1.05;
+}
+
+.btn a {
+  color: var(--primary-text);
+  text-decoration: none;
+}
+
+.btn:hover a {
+  color: var(--btn-text);
+}
+
+/* spacers idk i felt like it */
+.spacer {
+  padding: 60px 0;
+  /* this was why the colors wasn't showing boy */
+}
+
+.hero-section {
+  margin: 20px 0;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.hero-section h1 {
+  margin-top: 45px;
+}
+
+.hero-section p {
+  margin: 45px 0;
+  padding: 20px;
+}
+
+.hero-section h2 {
+  margin-bottom: 25px;
+}
+
+.hero-section .btn {
+  margin-bottom: 30px;
+}
+
+/* header */
+
+/* container */
+#header {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  background-color: var(--background-color);
+  border-bottom: 2px solid var(--accent-color-1);
+}
+
+nav ul {
+  display: flex;
+  justify-self: center;
+
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+nav a {
+  color: var(--primary-text);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.5s ease, background-color 1s ease;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  color: var(--highlight-color-dark);
+  background-color: var(--btn-Background);
+}
+
+/* Project Section */
+
+/* Section heading */
+.projects>h2 {
+  color: var(--accent-color-2);
+  font-size: 2em;
+  margin-bottom: 16px;
+
+  font-weight: bold;
+}
+
+/* section container for projects */
+#project-cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px 35px;
+  /* margin: 15px; */
+
+  padding: 0 10px;
+}
+
+/* project cards */
+.project-card {
+  width: 210px;
+  height: 350px;
+  padding: 16px;
+
+  border: 1px solid var(--link-color);
+  box-shadow: 0 4px 8px var(--accent-color-1);
+  border-radius: 8px;
+
+  background-color: var(--btn-Background);
+  transition: box-shadow 0.3s ease;
+}
+
+/* project card hover affect */
+.project-card:hover {
+  box-shadow: 0 8px 16px var(--accent-color-1);
+}
+
+/* project card img */
+.project-card img {
+  width: 100%;
+  height: 150px;
+
+  border-radius: 8px;
+}
+
+/* project card header */
+.project-card h3 {
+  color: var(--accent-color-1);
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
+/* project cards paragraph */
+.project-card p {
+  color: var(--primary-text);
+  margin-bottom: 16px;
+}
+
+/* project cards links */
+.project-card a {
+  color: var(--primary-text);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* project cards link hover affect */
+.project-card a:hover {
+  color: var(--link-color);
+}
+
+/* Skills Secetion */
+/* skill set container */
+.skill-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px 30px;
+}
+
+.skill {
+  position: relative;
+  width: 75px;
+  /* Adjust the size of the icon */
+  height: 75px;
+  /* Adjust the size of the icon */
+  /* margin: 15px; */
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+}
+
+.indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: lightgray;
+  /* Default background color for empty indicator */
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  border: 2px solid #fff;
+  /* Optional: border to make the indicator stand out */
+}
+
+/* skill levels  */
+.skill-lvl-1 .indicator {
+  /* casual use / not known */
+  background-color: grey;
+}
+
+.skill-lvl-2 .indicator {
+  /* currently learning */
+  background-color: yellow;
+}
+
+.skill-lvl-3 .indicator {
+  /* completed lessons and comfortable using professionally */
+  background-color: green;
+}
+
+
+/* social media section */
+
+#social-media-container {
+  margin: 20px 0;
+}
+
+/* note: i used the skill class on these elements to share their styles */
+.social-icons .badge {
+  margin: 5px 15px;
+  width: 100px;
+  height: 100px;
+  /* trans - had to leave */
+}
+
+/* only one instance currently, growing to two pre production but more are likely to come */
+.bi-section-container {
+  display: flex;
+  margin: 10px 15px;
+}
+
+.bi-section-container section {
+  display: inline;
+  width: 50%;
+}
+
+
+
+/* Contact */
+
+/* container */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/*  the form */
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+}
+
+/* he box labels */
+label {
+  margin: 0 10px;
+}
+
+/* inputs and text area */
+form input,
+form textarea {
+  border: none;
+  border-radius: 8px;
+  padding: 4px 8px;
+
+  background-color: var(--btn-Background);
+  color: var(--accent-color-1);
+}
+
+/* name and input combos */
+form div {
+  margin: 10px;
+  width: 60%;
+  align-self: center;
+}
+
+/* the top box containing the name and email */
+
+/* the indivual boxes */
+.contact-top-box div {
+  display: inline;
+  margin: 10px 25px;
+  width: 50%;
+
+}
+
+/* the container for label and textarea */
+.message-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* i hope this comment is unnecessary */
+.message-box textarea {
+  resize: none;
+  height: 100px;
+  width: 60%;
+  margin: 15px 0;
+}
+
+/* self explanatory */
+footer {
+  margin: 50px 0px 15px 0px;
+}

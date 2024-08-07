@@ -1,21 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tyshawn Andrews</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/home.css" />
+
+  <!-- includes the library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
-    <div id="header"></div>
-    <h1>Content</h1>
-    <div id="footer"></div>
-    
-    <script>
-        $(function() {
-            $('#header').load('/includes/header.html');
-            $('#footer').load('/includes/footer.html');
-        });
+  <!-- include Header -->
+  <div id="header"></div>
+  <!-- <div class="spacer" id="hero-section-spacer"></div> -->
+  <section class="hero-section">
+    <h1>Welcome to My Portfolio</h1>
+    <p>
+      <span id="name">I'm Tyshawn Andrews</span>, a passionate <span id="title">front-end student developer
+      </span>specializing in creating responsive and visually engaging web experiences. With a strong foundation in
+      HTML, CSS, and JavaScript, I am dedicated to crafting user-friendly websites and continually evolving my skills
+      through hands-on projects and online learning. Explore my work and discover how I can help bring your ideas to
+      life.
+    </p>
+    <h2>Where should we start?</h2>
+    <div class="inline-btn-group">
+      <h4 class="btn hero-btn"> <a href="#about-internal-link">Learn More</a></h4>
+      <h4 class="btn hero-btn main-btn"><a href="#contact-internal-link">Reach out to me</a></h4>
+      <h4 class="btn hero-btn"><a href="#projects-internal-link">See My Work</a></h4>
+    </div>
+  </section>
+  <div id="about-internal-link" class="spacer"></div>
+  <!-- About Section -->
+  <section id="about">
+    <div id="about-box">
+      <div id="about-paragraph">
+        <h2>About Me</h2>
+        <p>
+          With a hands-on approach, I have developed skills in web development. I am pursuing an Associate of Applied
+          Science at Johnson County Community College, with coursework in web development. I am dedicated to continuous
+          learning and applying my knowledge to real-world scenarios.
+        </p>
+      </div>
+      <div id="about-skill-list">
+        <h2 class="list-header">Skills</h2>
+        <div id="skill-set-container" class="skillset"></div>
+
+      </div>
+    </div>
+    <h4 class="btn"><a href="/about.html">Learn More</a></h4>
+  </section>
+
+  <div id="projects-internal-link" class="spacer"></div>
+  <!-- Portfolio Showcase Section -->
+  <section class="projects" id="portfolio-showcase">
+    <h2 id="project-showcase-header">Featured Projects</h2>
+    <!-- Projects Section -->
+    <div id="project-cards-container">
+      <!-- article * 3 (these each contain a card, we can select these multiple ways though we need to be consistent in how we do this in main ) -->
+    </div>
+    <h4 class="btn">
+      <a href="/projects.html">View All</a>
+    </h4>
+  </section>
+
+  <div class="spacer" id="social-media-internal-link"></div>
+
+  <h2>See me on</h2>
+  <div id="social-media-container"></div>
+
+  <!-- empty element to create more space -->
+  <div id="contact-internal-link" class="spacer"></div>
+
+  <!-- Contact Section -->
+  <div id="contact-container" class="contact-section"></div>
+
+  <!-- Footer include -->
+  <div id="footer"></div>
+
+  <!-- Include header and footer -->
+  <script src="/js/template loader.js"></script>
+  <script src="/js/skill set.js"></script>
+  <script type="module" src="/js/main.js"></script>
+
+  <script type="module">
+    import { displayProjectCards } from "/js/projects.js"; // imports main function from projects.js
+
+      displayProjectCards(true, [1, 5, 6]); // displays projects by ids [1, 5, 6]
+      // displayContact(true); <- moved to main, needs a update arcoss pages
+      $(function() {
+        $('#social-media-container').load('/includes/social-media.html');
+      })
+  
     </script>
 </body>
+
 </html>

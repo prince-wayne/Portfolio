@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projects - Tyshawn Andrews</title>
+    <!-- jQuery Libaray -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/projects.css">
+
 </head>
+
 <body>
+    <!-- header (navagation bar) -->
+    <div id="header"></div>
+    <div class="spacer"></div>
+
+    <!-- hero section -->
+    <div id="hero-section-container"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <!-- projects -->
+     <section class="projects">
+         <div id="project-cards-container"></div>
+     </section>
+     <div class="spacer"></div>
+
+    <!-- footer -->
+    <div id="footer"></div>
+
+    <!-- header and footer -->
+    <script src="./js/template loader.js" ></script>
+
     
+    <!-- script Main for Site  -->
+    <script type = 'module'>
+        import {displayProjectCards} from '/js/projects.js';
+        import {displayHeroSection} from '/js/hero.js';
+        import {displayContact} from '/js/contact.js';
+
+        displayProjectCards(false); // loads all projects  
+        displayHeroSection('Projects'); // drymaticaly loads hero section with hero.json data
+        displayContact(true); // display contact (this code file also contains the contact submit function)
+    </script>
+
 </body>
 </html>
