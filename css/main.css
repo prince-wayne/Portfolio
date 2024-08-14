@@ -79,6 +79,13 @@ p span {
   margin-left: 5px;
 }
 
+ul, ol {
+  margin: 0;
+  text-align: center;
+  padding-inline-start: 0;
+  padding-inline-end: 10px;
+}
+
 li {
   list-style-type: none;
 }
@@ -93,7 +100,7 @@ li {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--btn-background);
+  background-color: var(--btn-Background);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -115,7 +122,7 @@ li {
   background-color: var(--btn-Background);
   color: var(--primary-text);
   align-self: center;
-  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease, scale 0.5s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
   /* transition: all 0.3 ease, scale 0.5 ease; */
   opacity: 80%;
 }
@@ -124,7 +131,8 @@ li {
   opacity: 100%;
   background-color: var(--highlight-color);
   box-shadow: var(--accent-color-1) 0 0 5px 5px;
-  scale: 1.05;
+  /* scale: 1.05; */
+  transform: scale(1.05);
 }
 
 .btn a {
@@ -282,7 +290,7 @@ nav a:hover {
   color: var(--link-color);
 }
 
-/* Skills Secetion */
+/* Skills Section */
 /* skill set container */
 .skill-container {
   display: flex;
@@ -362,6 +370,7 @@ nav a:hover {
 .bi-section-container section {
   display: inline;
   width: 50%;
+  padding: 10px;
 }
 
 
@@ -369,12 +378,13 @@ nav a:hover {
 /* Contact */
 
 /* container */
-.contact-section {
+/* .contact-section {
   display: flex;
   flex-direction: column;
 }
 
 /*  the form */
+/*  
 .contact-section form {
   display: flex;
   flex-direction: column;
@@ -382,12 +392,10 @@ nav a:hover {
   align-content: center;
 }
 
-/* he box labels */
 label {
   margin: 0 10px;
 }
 
-/* inputs and text area */
 form input,
 form textarea {
   border: none;
@@ -398,16 +406,12 @@ form textarea {
   color: var(--accent-color-1);
 }
 
-/* name and input combos */
 form div {
   margin: 10px;
   width: 60%;
   align-self: center;
 }
 
-/* the top box containing the name and email */
-
-/* the indivual boxes */
 .contact-top-box div {
   display: inline;
   margin: 10px 25px;
@@ -415,7 +419,6 @@ form div {
 
 }
 
-/* the container for label and textarea */
 .message-box {
   display: flex;
   flex-direction: column;
@@ -423,15 +426,71 @@ form div {
   align-items: center;
 }
 
-/* i hope this comment is unnecessary */
 .message-box textarea {
   resize: none;
   height: 100px;
-  width: 60%;
+  width: 60%; 
   margin: 15px 0;
 }
-
+ */
 /* self explanatory */
 footer {
   margin: 50px 0px 15px 0px;
+}
+
+
+/* this media query is going to be functional when less than 500px */
+@media (max-width: 500px) {
+  body {
+    padding: 5px;
+  }
+
+  /* most flex containers bi sections would be best class for this */
+  .bi-section-container, #about {
+    flex-direction: column;
+  }
+
+  .bi-section-container section, #about > div {
+    display: inline;
+    width: 90%;
+
+  }
+
+  #social-media-container {
+    flex-wrap: nowrap;
+  }
+
+  .social-icons .badge {
+    width: 75px;
+  }
+
+  #project-cards-container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    row-gap: 30px;
+
+  }
+
+/* 
+  .contact-section form {
+    justify-content: space-around;
+    align-content: center;
+  }
+  
+  form div {
+    width: 80%;
+    
+  }
+
+  .email-box *, .name-box * {
+    display: block;
+    width: 75%;
+    align-self: center;
+  }
+
+  .message-box textarea {
+    width: 75%;
+  } 
+*/
+
 }

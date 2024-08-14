@@ -2,22 +2,20 @@
 /* hero section */
 
 
-#name, #title {
-  color: var(--highlight-color);
+#name,
+#title {
+  color: var(--accent-color-1);
   font-weight: bold;
 }
 
 
-
-/* Showcase (projects) */
-
-/* About */
+/* About */ /* this might accidental been unnecesscary */
 #about {
   margin: 20px 0;
   padding: 25px 30px;
 }
 
-#about-box{
+#about-box {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -41,7 +39,7 @@
   text-align: center;
 }
 
-#about-skill-list > ul  {
+#about-skill-list>ul {
   list-style: none;
   text-align: center;
   padding: 0;
@@ -53,4 +51,83 @@
 
 /* Footer */
 /* also a compondent */
+
+
+
+/* this is temporary meant to make fixing an iusse easier in this very specific moment (mom ment, shes mad) */
+
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+}
+
+label {
+  margin: 0 10px;
+}
+
+form input,
+form textarea {
+  border: none;
+  border-radius: 8px;
+  padding: 4px 8px;
+
+  background-color: var(--btn-Background);
+  color: var(--accent-color-1);
+}
+
+form div {
+  margin: 10px;
+  width: 60%;
+  align-self: center;
+}
+
+.contact-top-box div {
+  display: inline;
+  margin: 10px 25px;
+  width: 50%;
+
+}
+
+.message-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-box textarea {
+  resize: none;
+  height: 100px;
+  width: 60%; 
+  margin: 15px 0;
+}
+
+
+@media (max-width: 450px) {
+  .contact-section form {
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  form div {
+    width: 80%;
+  }
+
+  .email-box *,
+  .name-box * {
+    display: block;
+    width: 75%;
+    align-self: center;
+  }
+
+  .message-box textarea {
+    width: 75%;
+  }
+}
+
+
+
 
