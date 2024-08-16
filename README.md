@@ -9,8 +9,6 @@ Hello! I'm Tyshawn Andrews, a passionate and dedicated front-end developer with 
 
 - **Skills & Badges:** See the range of technologies I've mastered and am currently learning. I've replaced traditional skill listings with interactive badges, each marked with a colored circle to indicate my proficiency and progress.
 
-- **Blog:** Read about my experiences, challenges, and insights in the world of software development. I share tips, tutorials, and personal stories to help others on their learning journey.
-
 - **Contact:** Get in touch with me! Whether you have a question, a project opportunity, or just want to connect, you'll find all the necessary contact information here.
 
 ## My Vision
