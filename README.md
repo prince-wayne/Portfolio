@@ -24,7 +24,6 @@ My goal is to secure a full-time position as a junior front-end developer where 
 
 ## Note
 
-I haven't made this public yet, so you will need to clone the codebase and then start a local server or use a VS Code extension to view the site.
-
+This is an unfinished but functional website. Life happened, and by the time I was able to start building this again, I had a basic understanding of React and left this to begin building a second version with React, in a completely different style.
 
 Thank you for visiting my portfolio. I hope you enjoy exploring my work and learning more about me. If you have any questions or would like to discuss a project, please don't hesitate to reach out!
